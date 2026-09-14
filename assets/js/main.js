@@ -2,6 +2,21 @@
 (function () {
   "use strict";
 
+  // ---- Light / dark theme toggle ----
+  var themeBtn = document.getElementById("theme-toggle");
+  if (themeBtn) {
+    themeBtn.addEventListener("click", function () {
+      var isLight = document.documentElement.getAttribute("data-theme") === "light";
+      var next = isLight ? "dark" : "light";
+      if (next === "light") {
+        document.documentElement.setAttribute("data-theme", "light");
+      } else {
+        document.documentElement.removeAttribute("data-theme");
+      }
+      try { localStorage.setItem("dq-theme", next); } catch (e) { /* no-op */ }
+    });
+  }
+
   // ---- Copy-to-clipboard: any element with [data-copy] copies the text
   // content/value of the element referenced by its value (a CSS selector). ----
   document.addEventListener("click", function (e) {
