@@ -667,6 +667,7 @@ details.more-panel summary {
 .footer-col li { margin-bottom: 7px; }
 .footer-col a { color: var(--text-faint); }
 .footer-col a:hover { color: var(--accent-2); }
+.footer-col li.footer-sublink { margin-left: 14px; margin-bottom: 5px; font-size: 0.79rem; }
 .footer-bottom {
   border-top: 1px solid var(--border);
   padding-top: 16px;
