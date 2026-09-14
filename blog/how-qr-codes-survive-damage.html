@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How QR Codes Still Scan Even When Part of Them Is Damaged | DigitalQuiver Tools Blog</title>
+<meta name="description" content="A QR code can lose up to 30% of its surface to a smudge, logo, or scratch and still scan perfectly. Here's the error-correction trick that makes it possible.">
+<link rel="canonical" href="https://tools.digitalquiver.com/blog/how-qr-codes-survive-damage.html">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How QR Codes Still Scan Even When Part of Them Is Damaged">
+<meta property="og:description" content="A QR code can lose up to 30% of its surface to a smudge, logo, or scratch and still scan perfectly. Here's the error-correction trick that makes it possible.">
+<meta property="og:url" content="https://tools.digitalquiver.com/blog/how-qr-codes-survive-damage.html">
+<meta property="og:image" content="https://tools.digitalquiver.com/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tools.digitalquiver.com/assets/img/og-image.jpg">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "How QR Codes Still Scan Even When Part of Them Is Damaged", "description": "A QR code can lose up to 30% of its surface to a smudge, logo, or scratch and still scan perfectly. Here's the error-correction trick that makes it possible.", "datePublished": "2026-09-14", "url": "https://tools.digitalquiver.com/blog/how-qr-codes-survive-damage.html", "author": {"@type": "Organization", "name": "DigitalQuiver Tools"}}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand"><svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0f1523"/><path d="M14 50 L38 26" stroke="#f5a524" stroke-width="5" stroke-linecap="round"/><path d="M38 26 H22" stroke="#f5a524" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M38 26 V42" stroke="#f5a524" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="46" cy="18" r="4.5" fill="#36d1c4"/></svg>DigitalQuiver <span class="brand-sub">Tools</span></a>
+    <nav class="header-nav">
+      <a href="../index.html">All Tools</a>
+      <a href="../blog/index.html">Blog</a>
+    </nav>
+  </div>
+</header>
+<main class="container tool-main">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../index.html">Home</a><span class="sep">/</span><a href="index.html">Blog</a><span class="sep">/</span><span class="current">How QR Codes Still Scan Even When Part of Them Is Damaged</span>
+  </nav>
+  <div class="ad-slot">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-slot-inner"><script>
+(function () {
+  var isNarrow = window.innerWidth < 700;
+  var key = isNarrow ? "d8d6acbca52509f9d1a38150a06f159e" : "5cefb306c32d814f64e662478bd89dcb";
+  var w = isNarrow ? 320 : 728;
+  var h = isNarrow ? 50 : 90;
+  window.atOptions = { key: key, format: "iframe", height: h, width: w, params: {} };
+  document.write('<scr' + 'ipt src="https://www.highrevenueformat.com/' + key + '/invoke.js"><' + '/scr' + 'ipt>');
+})();
+</script></div>
+  </div>
+  <div class="tool-header">
+    <h1>How QR Codes Still Scan Even When Part of Them Is Damaged</h1>
+    <p class="tool-tagline">Published 2026-09-14</p>
+  </div>
+  <section class="tool-content">
+    <h2>An unlikely origin story</h2>
+    <p>QR codes were invented in 1994 by Denso Wave, a subsidiary of Toyota, to track automotive parts through the manufacturing process faster than the barcodes of the time allowed. The "QR" stands for "Quick Response" &mdash; the entire design goal was to be scanned and decoded almost instantly, which is also why it can hold far more data than a traditional 1D barcode in the same physical space, by encoding information in two dimensions instead of one.</p>
+    <h2>The trick that makes damaged codes still work</h2>
+    <p>You've probably seen a QR code with a logo stamped in the middle, or one that's slightly scratched or dirty, and it still scans fine. This isn't luck &mdash; it's a deliberate feature called error correction, based on a mathematical technique (Reed-Solomon error correction) that adds redundant data to the code. Depending on the error-correction level chosen when the code is generated, a QR code can lose up to roughly 7%, 15%, 25% or even 30% of its total data and still be fully readable, because the redundant portions let a scanner reconstruct what was lost.</p>
+    <h2>Why there's a size trade-off</h2>
+    <p>Higher error correction means more of the code's area is spent on redundancy rather than your actual data, which is why a high-error-correction QR code with the same content looks visually denser (more small squares) than a low-error-correction one. That's the real reason our tool lets you choose a level rather than always using the maximum: a code for a screen that won't get damaged can stay small and simple, while a code destined for a sticker or outdoor sign benefits from higher correction.</p>
+    <h2>What's actually inside the pattern</h2>
+    <p>Beyond your data and the error-correction bits, every QR code contains three large square "finder patterns" in three corners, which is what lets a scanner instantly recognize the code and figure out its orientation, even if the code is rotated, viewed at an angle, or partially outside the camera frame.</p>
+    <h2>Choosing the right level for your use case</h2>
+    <p>Medium error correction is a sensible default for a code that will live on a screen or a well-protected printed page. If you're printing on a label, sticker, or anything that might get scuffed, bent, or exposed to weather, bump it up to High. Our <a href="../tools/qr-code-generator.html">QR Code Generator</a> lets you pick the level and download the result as a PNG at the size you need.</p>
+  </section>
+  <div class="big-result" style="margin-top:24px;">
+    <div class="label" style="margin-bottom:10px;">Ready to try it yourself?</div>
+    <a class="btn btn-primary" href="../tools/qr-code-generator.html">Open the QR Code Generator →</a>
+  </div>
+  <div class="ad-slot">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-slot-inner"><script>
+atOptions = { key: "c6eb8755d17084a3a802e7cd45d22253", format: "iframe", height: 250, width: 300, params: {} };
+</script>
+<script src="https://www.highrevenueformat.com/c6eb8755d17084a3a802e7cd45d22253/invoke.js"></script></div>
+  </div>
+  <section class="related-tools"><h2>More Generators Articles</h2><ul><li><a href="how-long-should-your-password-be.html">How Long Should Your Password Really Be?</a></li>
+<li><a href="uuid-v4-vs-other-versions.html">UUID v4 vs. Other Versions: Why Almost Everyone Uses v4</a></li>
+<li><a href="why-designers-use-lorem-ipsum.html">Why Designers Still Use Lorem Ipsum (And What It Actually Says)</a></li></ul></section>
+  <div class="ad-slot">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-slot-inner"><script>
+(function () {
+  var isNarrow = window.innerWidth < 700;
+  var key = isNarrow ? "d8d6acbca52509f9d1a38150a06f159e" : "5cefb306c32d814f64e662478bd89dcb";
+  var w = isNarrow ? 320 : 728;
+  var h = isNarrow ? 50 : 90;
+  window.atOptions = { key: key, format: "iframe", height: h, width: w, params: {} };
+  document.write('<scr' + 'ipt src="https://www.highrevenueformat.com/' + key + '/invoke.js"><' + '/scr' + 'ipt>');
+})();
+</script></div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h3>DigitalQuiver Tools</h3>
+        <p style="margin:0;">Free, fast, browser-based utilities. No sign-up, no uploads &mdash; everything runs on your own device.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Categories</h3>
+        <ul><li><a href="../index.html#cat-text">Text Tools</a></li>
+<li><a href="../index.html#cat-generators">Generators</a></li>
+<li><a href="../index.html#cat-converters">Converters</a></li>
+<li><a href="../index.html#cat-calculators">Calculators</a></li>
+<li><a href="../index.html#cat-security">Security & Hash</a></li>
+<li><a href="../index.html#cat-encode">Encode / Decode</a></li>
+<li><a href="../index.html#cat-developer">Developer Tools</a></li>
+<li><a href="../index.html#cat-image">Image Tools</a></li>
+<li><a href="../index.html#cat-pdf">PDF Tools</a></li>
+<li><a href="../index.html#cat-seo">SEO Tools</a></li>
+<li><a href="../index.html#cat-misc">Misc Tools</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h3>Popular Tools</h3>
+        <ul><li><a href="../tools/word-counter.html">Word Counter</a></li>
+<li><a href="../tools/password-generator.html">Password Generator</a></li>
+<li><a href="../tools/qr-code-generator.html">QR Code Generator</a></li>
+<li><a href="../tools/base64-encoder-decoder.html">Base64 Encoder/Decoder</a></li>
+<li><a href="../tools/percentage-calculator.html">Percentage Calculator</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Connect</h3>
+        <ul>
+          <li><a href="../blog/index.html">Blog</a></li>
+          <li><a href="mailto:digitalquiverinfo@gmail.com">Email Us</a></li>
+          <li><a href="https://www.facebook.com/digitalquiver/" target="_blank" rel="noopener">Facebook Page</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 DigitalQuiver Tools. All rights reserved.</span>
+      <span>Built by <a href="https://digitalquiver.com/" target="_blank" rel="noopener">DigitalQuiver Agency</a></span>
+    </div>
+  </div>
+</footer>
+<script defer src="../assets/js/main.js"></script>
+</body>
+</html>
