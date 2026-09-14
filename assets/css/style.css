@@ -11,6 +11,7 @@
   --border: #232c42;
   --border-light: #2d3852;
   --text: #e7ecf7;
+  --text-body: #c9d1e0;
   --text-dim: #9aa5bd;
   --text-faint: #6b7692;
   --accent: #f5a524;
@@ -540,7 +541,7 @@ details.more-panel summary {
 /* ---------- Content / How-to block ---------- */
 .tool-content {
   margin-top: 28px;
-  color: var(--text);
+  color: var(--text-body);
   font-size: 0.97rem;
   line-height: 1.7;
 }
@@ -550,9 +551,10 @@ details.more-panel summary {
   margin: 24px 0 10px;
 }
 .tool-content h2:first-child { margin-top: 0; }
-.tool-content p { margin: 0 0 14px; color: var(--text); }
+.tool-content p { margin: 0 0 14px; color: var(--text-body); }
 .tool-content ul, .tool-content ol { padding-left: 20px; margin: 0 0 12px; }
 .tool-content li { margin-bottom: 6px; }
+.tool-content strong { color: var(--text); font-weight: 700; }
 
 .related-tools {
   margin-top: 26px;
