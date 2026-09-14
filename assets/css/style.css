@@ -517,10 +517,6 @@ a:hover { text-decoration: underline; }
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
-@media (prefers-reduced-motion: reduce) {
-  .marquee-content { animation: none; }
-}
-
 /* ---------- Trust band ---------- */
 .trust-band {
   margin: 40px 0 0;
