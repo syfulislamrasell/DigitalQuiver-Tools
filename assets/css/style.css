@@ -236,19 +236,22 @@ a:hover { text-decoration: underline; }
 .ad-slot {
   margin: 26px auto;
   max-width: 100%;
-  min-height: 100px;
-  border: 1px dashed var(--border-light);
-  border-radius: var(--radius-sm);
-  background: var(--bg-elevated);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-faint);
-  font-size: 0.72rem;
+  text-align: center;
+}
+.ad-slot .ad-label {
+  font-size: 0.66rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 8px;
+  opacity: 0.7;
 }
-.ad-slot span { opacity: 0.6; }
+.ad-slot-inner {
+  display: inline-block;
+  max-width: 100%;
+  overflow-x: auto;
+  line-height: 0;
+}
 
 /* ---------- Tool page layout ---------- */
 main.tool-main {
@@ -599,6 +602,3 @@ details.more-panel summary {
   .tool-grid { grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); }
 }
 
-@media (min-width: 720px) {
-  .ad-slot.ad-banner { min-height: 90px; }
-}
