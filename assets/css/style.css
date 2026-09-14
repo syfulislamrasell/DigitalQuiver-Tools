@@ -405,19 +405,19 @@ a:hover { text-decoration: underline; }
   margin-bottom: 18px;
   flex-wrap: wrap;
 }
-.featured-heading h2 { margin: 0 0 4px; font-size: 1.3rem; }
-.featured-sub { margin: 0; color: var(--text-faint); font-size: 0.85rem; }
+.featured-heading h2 { margin: 0 0 6px; font-size: 1.7rem; font-weight: 800; }
+.featured-sub { margin: 0; color: var(--text-faint); font-size: 1rem; }
 .featured-view-all {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 0.85rem;
+  font-size: 0.98rem;
   font-weight: 700;
   color: var(--accent-2);
   white-space: nowrap;
 }
 .featured-view-all:hover { text-decoration: none; }
-.featured-view-all svg { width: 15px; height: 15px; }
+.featured-view-all svg { width: 17px; height: 17px; }
 
 .feature-grid {
   display: grid;
@@ -433,11 +433,11 @@ a:hover { text-decoration: underline; }
 .feature-card {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 16px;
+  padding: 20px;
   color: var(--text);
   transition: border-color .12s ease, background .12s ease, transform .12s ease;
 }
@@ -448,9 +448,9 @@ a:hover { text-decoration: underline; }
   transform: translateY(-2px);
 }
 .feature-card .icon {
-  width: 42px;
-  height: 42px;
-  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
   background: var(--icon-bg);
   color: var(--accent);
   display: flex;
@@ -460,10 +460,10 @@ a:hover { text-decoration: underline; }
 }
 .feature-card .icon.chip-teal { background: rgba(54, 209, 196, 0.14); color: var(--accent-2); }
 [data-theme="light"] .feature-card .icon.chip-teal { background: rgba(8, 104, 95, 0.1); }
-.feature-card .icon .icon-svg { width: 21px; height: 21px; }
+.feature-card .icon .icon-svg { width: 24px; height: 24px; }
 .feature-card-text { display: flex; flex-direction: column; min-width: 0; flex: 1; }
-.feature-card-text .name { font-weight: 800; font-size: 0.98rem; }
-.feature-card-text .desc { color: var(--text-faint); font-size: 0.8rem; margin-top: 2px; }
+.feature-card-text .name { font-weight: 800; font-size: 1.15rem; }
+.feature-card-text .desc { color: var(--text-faint); font-size: 0.92rem; margin-top: 4px; }
 .feature-card-arrow {
   flex: none;
   color: var(--text-faint);
