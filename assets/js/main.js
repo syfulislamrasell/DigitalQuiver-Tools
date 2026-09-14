@@ -17,6 +17,22 @@
     });
   }
 
+  // ---- Mobile header menu toggle ----
+  var navToggle = document.getElementById("nav-toggle");
+  var headerNav = document.getElementById("header-nav");
+  if (navToggle && headerNav) {
+    navToggle.addEventListener("click", function () {
+      var isOpen = headerNav.classList.toggle("open");
+      navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+    headerNav.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        headerNav.classList.remove("open");
+        navToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
   // ---- Copy-to-clipboard: any element with [data-copy] copies the text
   // content/value of the element referenced by its value (a CSS selector). ----
   document.addEventListener("click", function (e) {
