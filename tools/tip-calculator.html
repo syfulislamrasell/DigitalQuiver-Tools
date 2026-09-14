@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tip Calculator - Calculate Tip & Split the Bill | DigitalQuiver Tools</title>
+<meta name="description" content="Calculate the tip amount and total bill, and split it evenly between any number of people. Free, fast tip calculator for restaurants and services.">
+<link rel="canonical" href="https://tools.digitalquiver.com/tools/tip-calculator.html">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tip Calculator - Calculate Tip & Split the Bill | DigitalQuiver Tools">
+<meta property="og:description" content="Calculate the tip amount and total bill, and split it evenly between any number of people. Free, fast tip calculator for restaurants and services.">
+<meta property="og:url" content="https://tools.digitalquiver.com/tools/tip-calculator.html">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Tip Calculator - DigitalQuiver Tools", "url": "https://tools.digitalquiver.com/tools/tip-calculator.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any (runs in browser)", "description": "Calculate the tip amount and total bill, and split it evenly between any number of people. Free, fast tip calculator for restaurants and services.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand"><svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0f1523"/><path d="M14 50 L38 26" stroke="#f5a524" stroke-width="5" stroke-linecap="round"/><path d="M38 26 H22" stroke="#f5a524" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M38 26 V42" stroke="#f5a524" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="46" cy="18" r="4.5" fill="#36d1c4"/></svg>DigitalQuiver <span class="brand-sub">Tools</span></a>
+    <nav class="header-nav">
+      <a href="../index.html">All Tools</a>
+    </nav>
+  </div>
+</header>
+<main class="container tool-main">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#cat-calculators">Calculators</a><span class="sep">/</span><span class="current">Tip Calculator</span>
+    </nav>
+  <!-- AdSense placeholder: paste your <ins class="adsbygoogle"> ad unit code here -->
+  <div class="ad-slot ad-banner" aria-hidden="true"><span>Advertisement &mdash; top of page</span></div>
+  <div class="tool-header">
+    <h1>Tip Calculator</h1>
+    <p class="tool-tagline">Split the bill and calculate the tip in seconds.</p>
+  </div>
+  <div class="tool-widget" id="tip-calculator" >
+    <div class="field"><label for="tp-bill">Bill amount</label><input type="number" id="tp-bill" value="50"></div>
+    <div class="field">
+      <label>Tip percentage</label>
+      <div class="checkbox-row" id="tp-presets">
+        <button type="button" class="btn btn-secondary btn-sm" data-tip="10">10%</button>
+        <button type="button" class="btn btn-secondary btn-sm" data-tip="15">15%</button>
+        <button type="button" class="btn btn-secondary btn-sm active" data-tip="18">18%</button>
+        <button type="button" class="btn btn-secondary btn-sm" data-tip="20">20%</button>
+        <button type="button" class="btn btn-secondary btn-sm" data-tip="25">25%</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="field"><label for="tp-custom">Custom tip (%)</label><input type="number" id="tp-custom" value="18"></div>
+      <div class="field"><label for="tp-people">Split between (people)</label><input type="number" id="tp-people" min="1" value="1"></div>
+    </div>
+    <div class="result-grid">
+      <div class="result-item"><span class="value" id="tp-tip">0</span><span class="label">Tip Amount</span></div>
+      <div class="result-item"><span class="value" id="tp-total">0</span><span class="label">Total Bill</span></div>
+      <div class="result-item"><span class="value" id="tp-perperson">0</span><span class="label">Per Person</span></div>
+    </div>
+  </div>
+  <!-- AdSense placeholder: paste your <ins class="adsbygoogle"> ad unit code here -->
+  <div class="ad-slot ad-banner" aria-hidden="true"><span>Advertisement &mdash; in-content</span></div>
+  <section class="tool-content">
+    <h2>What is the Tip Calculator?</h2>
+    <p>This tool calculates how much to tip on a bill, the total amount including the tip, and how much each person owes when the bill is split evenly among a group. Pick a common tip percentage with one tap, or enter any custom percentage you prefer.</p>
+    <h2>How to use it</h2>
+    <ol>
+      <li>Enter the bill amount before tip.</li>
+      <li>Choose a preset tip percentage or type a custom one.</li>
+      <li>Enter how many people are splitting the bill to see the per-person amount.</li>
+    </ol>
+    <p>Tipping customs vary a lot from country to country and even between types of service &mdash; restaurants, delivery, salons and taxis often have different norms &mdash; so this calculator deliberately leaves the percentage entirely up to you rather than assuming one region's standard. Splitting the total evenly is the simplest approach for a group meal; if people ordered very different amounts, you may prefer to calculate each person's tip on their own portion instead, but the even split covers the vast majority of everyday cases quickly.</p>
+  </section>
+  <section class="related-tools">
+      <h2>More Calculators</h2>
+      <div class="tool-grid"><a class="tool-card" href="../tools/age-calculator.html" data-name="Age Calculator" data-desc="Find your exact age in years, months and days."><span class="icon">🎂</span><span class="name">Age Calculator</span><span class="desc">Find your exact age in years, months and days.</span></a>
+<a class="tool-card" href="../tools/percentage-calculator.html" data-name="Percentage Calculator" data-desc="Three common percentage calculations in one simple tool."><span class="icon">💯</span><span class="name">Percentage Calculator</span><span class="desc">Three common percentage calculations in one simple tool.</span></a>
+<a class="tool-card" href="../tools/bmi-calculator.html" data-name="BMI Calculator" data-desc="Calculate Body Mass Index using metric or imperial units."><span class="icon">⚖️</span><span class="name">BMI Calculator</span><span class="desc">Calculate Body Mass Index using metric or imperial units.</span></a>
+<a class="tool-card" href="../tools/discount-calculator.html" data-name="Discount Calculator" data-desc="Work out sale prices, savings and optional tax in one step."><span class="icon">🏷️</span><span class="name">Discount Calculator</span><span class="desc">Work out sale prices, savings and optional tax in one step.</span></a></div>
+    </section>
+  <!-- AdSense placeholder: paste your <ins class="adsbygoogle"> ad unit code here -->
+  <div class="ad-slot ad-banner" aria-hidden="true"><span>Advertisement &mdash; above footer</span></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h3>DigitalQuiver Tools</h3>
+        <p style="margin:0;">Free, fast, browser-based utilities. No sign-up, no uploads &mdash; everything runs on your own device.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Categories</h3>
+        <ul><li><a href="../index.html#cat-text">Text Tools</a></li>
+<li><a href="../index.html#cat-generators">Generators</a></li>
+<li><a href="../index.html#cat-converters">Converters</a></li>
+<li><a href="../index.html#cat-calculators">Calculators</a></li>
+<li><a href="../index.html#cat-security">Security & Hash</a></li>
+<li><a href="../index.html#cat-encode">Encode / Decode</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h3>Popular Tools</h3>
+        <ul><li><a href="../tools/word-counter.html">Word Counter</a></li>
+<li><a href="../tools/password-generator.html">Password Generator</a></li>
+<li><a href="../tools/qr-code-generator.html">QR Code Generator</a></li>
+<li><a href="../tools/base64-encoder-decoder.html">Base64 Encoder/Decoder</a></li>
+<li><a href="../tools/percentage-calculator.html">Percentage Calculator</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 DigitalQuiver Tools. All rights reserved.</span>
+      <span>Made for everyone, everywhere.</span>
+    </div>
+  </div>
+</footer>
+<script defer src="../assets/js/main.js"></script>
+  
+<script defer src="../assets/js/tools/tip-calculator.js"></script>
+</body>
+</html>

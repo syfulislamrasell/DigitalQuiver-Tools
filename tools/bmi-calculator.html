@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BMI Calculator - Free Body Mass Index Calculator | DigitalQuiver Tools</title>
+<meta name="description" content="Calculate your Body Mass Index (BMI) using metric (kg/cm) or imperial (lb/ft-in) units and see your WHO weight category instantly.">
+<link rel="canonical" href="https://tools.digitalquiver.com/tools/bmi-calculator.html">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BMI Calculator - Free Body Mass Index Calculator | DigitalQuiver Tools">
+<meta property="og:description" content="Calculate your Body Mass Index (BMI) using metric (kg/cm) or imperial (lb/ft-in) units and see your WHO weight category instantly.">
+<meta property="og:url" content="https://tools.digitalquiver.com/tools/bmi-calculator.html">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "BMI Calculator - DigitalQuiver Tools", "url": "https://tools.digitalquiver.com/tools/bmi-calculator.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any (runs in browser)", "description": "Calculate your Body Mass Index (BMI) using metric (kg/cm) or imperial (lb/ft-in) units and see your WHO weight category instantly.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand"><svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0f1523"/><path d="M14 50 L38 26" stroke="#f5a524" stroke-width="5" stroke-linecap="round"/><path d="M38 26 H22" stroke="#f5a524" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M38 26 V42" stroke="#f5a524" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="46" cy="18" r="4.5" fill="#36d1c4"/></svg>DigitalQuiver <span class="brand-sub">Tools</span></a>
+    <nav class="header-nav">
+      <a href="../index.html">All Tools</a>
+    </nav>
+  </div>
+</header>
+<main class="container tool-main">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#cat-calculators">Calculators</a><span class="sep">/</span><span class="current">BMI Calculator</span>
+    </nav>
+  <!-- AdSense placeholder: paste your <ins class="adsbygoogle"> ad unit code here -->
+  <div class="ad-slot ad-banner" aria-hidden="true"><span>Advertisement &mdash; top of page</span></div>
+  <div class="tool-header">
+    <h1>BMI Calculator</h1>
+    <p class="tool-tagline">Calculate Body Mass Index using metric or imperial units.</p>
+  </div>
+  <div class="tool-widget" id="bmi-calculator" >
+    <div class="segmented" id="bmi-units">
+      <button type="button" class="active" data-units="metric">Metric (kg / cm)</button>
+      <button type="button" data-units="imperial">Imperial (lb / ft-in)</button>
+    </div>
+    <div id="bmi-metric-fields" class="row">
+      <div class="field"><label for="bmi-weight-kg">Weight (kg)</label><input type="number" id="bmi-weight-kg" value="70"></div>
+      <div class="field"><label for="bmi-height-cm">Height (cm)</label><input type="number" id="bmi-height-cm" value="175"></div>
+    </div>
+    <div id="bmi-imperial-fields" class="row" style="display:none;">
+      <div class="field"><label for="bmi-weight-lb">Weight (lb)</label><input type="number" id="bmi-weight-lb" value="154"></div>
+      <div class="field"><label for="bmi-height-ft">Height (ft)</label><input type="number" id="bmi-height-ft" value="5"></div>
+      <div class="field"><label for="bmi-height-in">+ Height (in)</label><input type="number" id="bmi-height-in" value="9"></div>
+    </div>
+    <div class="btn-row">
+      <button type="button" class="btn btn-primary" id="bmi-calc">Calculate BMI</button>
+    </div>
+    <div class="big-result" id="bmi-results" style="display:none;">
+      <div class="value" id="bmi-value">0</div>
+      <div class="label" id="bmi-category">&mdash;</div>
+    </div>
+  </div>
+  <!-- AdSense placeholder: paste your <ins class="adsbygoogle"> ad unit code here -->
+  <div class="ad-slot ad-banner" aria-hidden="true"><span>Advertisement &mdash; in-content</span></div>
+  <section class="tool-content">
+    <h2>What is BMI?</h2>
+    <p>Body Mass Index (BMI) is a simple screening measure that relates your weight to your height, calculated as weight in kilograms divided by height in metres squared. This calculator supports both metric and imperial units and classifies the result using the World Health Organization's standard adult BMI categories.</p>
+    <h2>How to use it</h2>
+    <ol>
+      <li>Choose metric or imperial units.</li>
+      <li>Enter your weight and height.</li>
+      <li>Click <strong>Calculate BMI</strong> to see your BMI value and category.</li>
+    </ol>
+    <p>The standard adult categories are: below 18.5 is underweight, 18.5-24.9 is a normal weight range, 25-29.9 is overweight, and 30 or above is classified as obese. BMI is a widely used starting point for population health screening because it only requires two easy-to-measure numbers, but it does not directly measure body fat percentage, and it does not account for muscle mass, bone density, age, sex or body composition &mdash; a very muscular person can show a high BMI without carrying excess fat. This calculator is for general information only and is not a substitute for advice from a qualified healthcare professional.</p>
+  </section>
+  <section class="related-tools">
+      <h2>More Calculators</h2>
+      <div class="tool-grid"><a class="tool-card" href="../tools/age-calculator.html" data-name="Age Calculator" data-desc="Find your exact age in years, months and days."><span class="icon">🎂</span><span class="name">Age Calculator</span><span class="desc">Find your exact age in years, months and days.</span></a>
+<a class="tool-card" href="../tools/percentage-calculator.html" data-name="Percentage Calculator" data-desc="Three common percentage calculations in one simple tool."><span class="icon">💯</span><span class="name">Percentage Calculator</span><span class="desc">Three common percentage calculations in one simple tool.</span></a>
+<a class="tool-card" href="../tools/discount-calculator.html" data-name="Discount Calculator" data-desc="Work out sale prices, savings and optional tax in one step."><span class="icon">🏷️</span><span class="name">Discount Calculator</span><span class="desc">Work out sale prices, savings and optional tax in one step.</span></a>
+<a class="tool-card" href="../tools/loan-payment-calculator.html" data-name="Loan Payment Calculator" data-desc="Estimate monthly payments and total interest on any loan."><span class="icon">🏦</span><span class="name">Loan Payment Calculator</span><span class="desc">Estimate monthly payments and total interest on any loan.</span></a></div>
+    </section>
+  <!-- AdSense placeholder: paste your <ins class="adsbygoogle"> ad unit code here -->
+  <div class="ad-slot ad-banner" aria-hidden="true"><span>Advertisement &mdash; above footer</span></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h3>DigitalQuiver Tools</h3>
+        <p style="margin:0;">Free, fast, browser-based utilities. No sign-up, no uploads &mdash; everything runs on your own device.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Categories</h3>
+        <ul><li><a href="../index.html#cat-text">Text Tools</a></li>
+<li><a href="../index.html#cat-generators">Generators</a></li>
+<li><a href="../index.html#cat-converters">Converters</a></li>
+<li><a href="../index.html#cat-calculators">Calculators</a></li>
+<li><a href="../index.html#cat-security">Security & Hash</a></li>
+<li><a href="../index.html#cat-encode">Encode / Decode</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h3>Popular Tools</h3>
+        <ul><li><a href="../tools/word-counter.html">Word Counter</a></li>
+<li><a href="../tools/password-generator.html">Password Generator</a></li>
+<li><a href="../tools/qr-code-generator.html">QR Code Generator</a></li>
+<li><a href="../tools/base64-encoder-decoder.html">Base64 Encoder/Decoder</a></li>
+<li><a href="../tools/percentage-calculator.html">Percentage Calculator</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 DigitalQuiver Tools. All rights reserved.</span>
+      <span>Made for everyone, everywhere.</span>
+    </div>
+  </div>
+</footer>
+<script defer src="../assets/js/main.js"></script>
+  
+<script defer src="../assets/js/tools/bmi-calculator.js"></script>
+</body>
+</html>

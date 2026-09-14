@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loan Payment Calculator - Monthly Payment & Amortization | DigitalQuiver Tools</title>
+<meta name="description" content="Calculate your estimated monthly loan payment, total interest and total cost using standard amortization. Free loan payment calculator, any currency.">
+<link rel="canonical" href="https://tools.digitalquiver.com/tools/loan-payment-calculator.html">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Loan Payment Calculator - Monthly Payment & Amortization | DigitalQuiver Tools">
+<meta property="og:description" content="Calculate your estimated monthly loan payment, total interest and total cost using standard amortization. Free loan payment calculator, any currency.">
+<meta property="og:url" content="https://tools.digitalquiver.com/tools/loan-payment-calculator.html">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Loan Payment Calculator - DigitalQuiver Tools", "url": "https://tools.digitalquiver.com/tools/loan-payment-calculator.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any (runs in browser)", "description": "Calculate your estimated monthly loan payment, total interest and total cost using standard amortization. Free loan payment calculator, any currency.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand"><svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0f1523"/><path d="M14 50 L38 26" stroke="#f5a524" stroke-width="5" stroke-linecap="round"/><path d="M38 26 H22" stroke="#f5a524" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M38 26 V42" stroke="#f5a524" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="46" cy="18" r="4.5" fill="#36d1c4"/></svg>DigitalQuiver <span class="brand-sub">Tools</span></a>
+    <nav class="header-nav">
+      <a href="../index.html">All Tools</a>
+    </nav>
+  </div>
+</header>
+<main class="container tool-main">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#cat-calculators">Calculators</a><span class="sep">/</span><span class="current">Loan Payment Calculator</span>
+    </nav>
+  <!-- AdSense placeholder: paste your <ins class="adsbygoogle"> ad unit code here -->
+  <div class="ad-slot ad-banner" aria-hidden="true"><span>Advertisement &mdash; top of page</span></div>
+  <div class="tool-header">
+    <h1>Loan Payment Calculator</h1>
+    <p class="tool-tagline">Estimate monthly payments and total interest on any loan.</p>
+  </div>
+  <div class="tool-widget" id="loan-calculator" >
+    <div class="row">
+      <div class="field"><label for="ln-amount">Loan amount</label><input type="number" id="ln-amount" value="20000"></div>
+      <div class="field"><label for="ln-rate">Annual interest rate (%)</label><input type="number" id="ln-rate" value="6.5" step="0.01"></div>
+      <div class="field"><label for="ln-term">Loan term</label><input type="number" id="ln-term" value="5"></div>
+      <div class="field">
+        <label for="ln-term-unit">Term unit</label>
+        <select id="ln-term-unit">
+          <option value="years" selected>Years</option>
+          <option value="months">Months</option>
+        </select>
+      </div>
+    </div>
+    <div class="result-grid">
+      <div class="result-item"><span class="value" id="ln-payment">0</span><span class="label">Monthly Payment</span></div>
+      <div class="result-item"><span class="value" id="ln-total-interest">0</span><span class="label">Total Interest</span></div>
+      <div class="result-item"><span class="value" id="ln-total-paid">0</span><span class="label">Total Amount Paid</span></div>
+    </div>
+    <details class="more-panel">
+      <summary>Show amortization schedule (first 12 payments)</summary>
+      <div class="table-scroll">
+        <table class="data-table" id="ln-table">
+          <thead><tr><th>#</th><th>Payment</th><th>Principal</th><th>Interest</th><th>Balance</th></tr></thead>
+          <tbody id="ln-table-body"></tbody>
+        </table>
+      </div>
+    </details>
+  </div>
+  <!-- AdSense placeholder: paste your <ins class="adsbygoogle"> ad unit code here -->
+  <div class="ad-slot ad-banner" aria-hidden="true"><span>Advertisement &mdash; in-content</span></div>
+  <section class="tool-content">
+    <h2>What is the Loan Payment Calculator?</h2>
+    <p>This calculator estimates the fixed monthly payment for a standard amortizing loan &mdash; the same math behind most personal loans, auto loans and mortgages &mdash; along with the total interest you'll pay over the life of the loan and the total amount repaid.</p>
+    <h2>How to use it</h2>
+    <ol>
+      <li>Enter the loan amount, the annual interest rate, and the loan term in years or months.</li>
+      <li>Read the monthly payment, total interest and total repayment amount.</li>
+      <li>Expand the amortization panel to see how the first 12 payments split between principal and interest.</li>
+    </ol>
+    <p>The calculation uses the standard amortization formula <code>M = P &times; r(1+r)&#8319; &divide; ((1+r)&#8319; &minus; 1)</code>, where P is the loan amount, r is the monthly interest rate, and n is the number of payments. Early in an amortizing loan, a larger share of each payment goes toward interest rather than principal, which is why the amortization table shows the interest portion shrinking and the principal portion growing with each payment. This tool gives a generic, currency-agnostic estimate for planning purposes; your actual lender may apply different rounding, fees or day-count conventions, so always confirm the exact figures with your loan provider before making a decision.</p>
+  </section>
+  <section class="related-tools">
+      <h2>More Calculators</h2>
+      <div class="tool-grid"><a class="tool-card" href="../tools/age-calculator.html" data-name="Age Calculator" data-desc="Find your exact age in years, months and days."><span class="icon">🎂</span><span class="name">Age Calculator</span><span class="desc">Find your exact age in years, months and days.</span></a>
+<a class="tool-card" href="../tools/percentage-calculator.html" data-name="Percentage Calculator" data-desc="Three common percentage calculations in one simple tool."><span class="icon">💯</span><span class="name">Percentage Calculator</span><span class="desc">Three common percentage calculations in one simple tool.</span></a>
+<a class="tool-card" href="../tools/bmi-calculator.html" data-name="BMI Calculator" data-desc="Calculate Body Mass Index using metric or imperial units."><span class="icon">⚖️</span><span class="name">BMI Calculator</span><span class="desc">Calculate Body Mass Index using metric or imperial units.</span></a>
+<a class="tool-card" href="../tools/discount-calculator.html" data-name="Discount Calculator" data-desc="Work out sale prices, savings and optional tax in one step."><span class="icon">🏷️</span><span class="name">Discount Calculator</span><span class="desc">Work out sale prices, savings and optional tax in one step.</span></a></div>
+    </section>
+  <!-- AdSense placeholder: paste your <ins class="adsbygoogle"> ad unit code here -->
+  <div class="ad-slot ad-banner" aria-hidden="true"><span>Advertisement &mdash; above footer</span></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h3>DigitalQuiver Tools</h3>
+        <p style="margin:0;">Free, fast, browser-based utilities. No sign-up, no uploads &mdash; everything runs on your own device.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Categories</h3>
+        <ul><li><a href="../index.html#cat-text">Text Tools</a></li>
+<li><a href="../index.html#cat-generators">Generators</a></li>
+<li><a href="../index.html#cat-converters">Converters</a></li>
+<li><a href="../index.html#cat-calculators">Calculators</a></li>
+<li><a href="../index.html#cat-security">Security & Hash</a></li>
+<li><a href="../index.html#cat-encode">Encode / Decode</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h3>Popular Tools</h3>
+        <ul><li><a href="../tools/word-counter.html">Word Counter</a></li>
+<li><a href="../tools/password-generator.html">Password Generator</a></li>
+<li><a href="../tools/qr-code-generator.html">QR Code Generator</a></li>
+<li><a href="../tools/base64-encoder-decoder.html">Base64 Encoder/Decoder</a></li>
+<li><a href="../tools/percentage-calculator.html">Percentage Calculator</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 DigitalQuiver Tools. All rights reserved.</span>
+      <span>Made for everyone, everywhere.</span>
+    </div>
+  </div>
+</footer>
+<script defer src="../assets/js/main.js"></script>
+  
+<script defer src="../assets/js/tools/loan-payment-calculator.js"></script>
+</body>
+</html>
