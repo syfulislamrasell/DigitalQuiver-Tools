@@ -279,7 +279,7 @@ a:hover { text-decoration: underline; }
   height: 18px;
   color: var(--text-faint);
 }
-#tool-search {
+.search-wrap input {
   width: 100%;
   padding: 13px 14px 13px 42px;
   border-radius: 999px;
@@ -288,7 +288,7 @@ a:hover { text-decoration: underline; }
   color: var(--text);
   font-size: 0.95rem;
 }
-#tool-search:focus {
+.search-wrap input:focus {
   outline: none;
   border-color: var(--accent);
 }
