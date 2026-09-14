@@ -22,7 +22,7 @@
   --accent-2: #36d1c4;
   --danger: #f1554c;
   --success: #36d399;
-  --header-bg: rgba(18, 23, 42, 0.92);
+  --header-bg: rgba(18, 23, 42, 0.98);
   --radius: 14px;
   --radius-sm: 9px;
   --max-width: 1080px;
@@ -46,7 +46,7 @@
   --accent-2: #08685f;
   --danger: #c02e26;
   --success: #168a58;
-  --header-bg: rgba(255, 255, 255, 0.88);
+  --header-bg: rgba(255, 255, 255, 0.98);
 }
 
 * {
