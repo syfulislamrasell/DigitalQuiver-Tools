@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bcrypt Hash Generator & Verifier - Free Online Tool | DigitalQuiver Tools</title>
+<meta name="description" content="Generate a bcrypt hash from any text with a configurable cost factor, or verify text against an existing bcrypt hash. Runs entirely in your browser.">
+<link rel="canonical" href="https://tools.digitalquiver.com/tools/bcrypt-hash-generator.html">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bcrypt Hash Generator & Verifier - Free Online Tool | DigitalQuiver Tools">
+<meta property="og:description" content="Generate a bcrypt hash from any text with a configurable cost factor, or verify text against an existing bcrypt hash. Runs entirely in your browser.">
+<meta property="og:url" content="https://tools.digitalquiver.com/tools/bcrypt-hash-generator.html">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Bcrypt Hash Generator - DigitalQuiver Tools", "url": "https://tools.digitalquiver.com/tools/bcrypt-hash-generator.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any (runs in browser)", "description": "Generate a bcrypt hash from any text with a configurable cost factor, or verify text against an existing bcrypt hash. Runs entirely in your browser.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand"><svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0f1523"/><path d="M14 50 L38 26" stroke="#f5a524" stroke-width="5" stroke-linecap="round"/><path d="M38 26 H22" stroke="#f5a524" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M38 26 V42" stroke="#f5a524" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="46" cy="18" r="4.5" fill="#36d1c4"/></svg>DigitalQuiver <span class="brand-sub">Tools</span></a>
+    <nav class="header-nav">
+      <a href="../index.html">All Tools</a>
+    </nav>
+  </div>
+</header>
+<main class="container tool-main">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#cat-security">Security & Hash</a><span class="sep">/</span><span class="current">Bcrypt Hash Generator</span>
+    </nav>
+  <!-- AdSense placeholder: paste your <ins class="adsbygoogle"> ad unit code here -->
+  <div class="ad-slot ad-banner" aria-hidden="true"><span>Advertisement &mdash; top of page</span></div>
+  <div class="tool-header">
+    <h1>Bcrypt Hash Generator</h1>
+    <p class="tool-tagline">Hash text with bcrypt, and verify text against an existing hash.</p>
+  </div>
+  <div class="tool-widget" id="bcrypt-generator" >
+    <div class="field">
+      <label for="bc-text">Text to hash</label>
+      <input type="text" id="bc-text" placeholder="Enter text (e.g. a password)">
+    </div>
+    <div class="field">
+      <label for="bc-rounds">Cost factor (salt rounds): <span id="bc-rounds-val">10</span></label>
+      <input type="range" id="bc-rounds" min="4" max="14" value="10">
+      <p class="hint">Higher = slower to compute, more resistant to brute-force. 10-12 is a common default.</p>
+    </div>
+    <div class="btn-row">
+      <button type="button" class="btn btn-primary" id="bc-generate">Generate Hash</button>
+    </div>
+    <div class="field" style="margin-top:14px;">
+      <label for="bc-output">Bcrypt hash</label>
+      <div class="output-box">
+        <input type="text" id="bc-output" readonly>
+        <button class="copy-btn" data-copy="#bc-output">Copy</button>
+      </div>
+    </div>
+    <details class="more-panel">
+      <summary>Verify text against an existing bcrypt hash</summary>
+      <div class="field"><label for="bc-verify-text">Text</label><input type="text" id="bc-verify-text" placeholder="Text to check"></div>
+      <div class="field"><label for="bc-verify-hash">Bcrypt hash</label><input type="text" id="bc-verify-hash" placeholder="$2a$10$..."></div>
+      <div class="btn-row"><button type="button" class="btn btn-secondary" id="bc-verify-btn">Verify</button></div>
+      <p id="bc-verify-result" style="font-weight:700;"></p>
+    </details>
+  </div>
+  <!-- AdSense placeholder: paste your <ins class="adsbygoogle"> ad unit code here -->
+  <div class="ad-slot ad-banner" aria-hidden="true"><span>Advertisement &mdash; in-content</span></div>
+  <section class="tool-content">
+    <h2>What is Bcrypt?</h2>
+    <p>Bcrypt is a slow-by-design password hashing algorithm built on the Blowfish cipher. Unlike a fast general-purpose hash, bcrypt includes a "cost factor" that controls how many rounds of internal processing it performs, deliberately making each hash take longer to compute &mdash; which makes large-scale password-guessing attacks far more expensive for an attacker.</p>
+    <h2>How to use it</h2>
+    <ol>
+      <li>Enter the text you want to hash and choose a cost factor.</li>
+      <li>Click <strong>Generate Hash</strong>; higher cost factors take visibly longer, which is the intended trade-off.</li>
+      <li>To check a value against an existing hash, use the verify panel below &mdash; it returns a simple match or no-match result.</li>
+    </ol>
+    <p>Bcrypt automatically generates and embeds a random salt in every hash it produces, which is why hashing the same text twice gives two different-looking results, both of which will still verify correctly. This is the standard way to store passwords server-side: never store a plain password, store its bcrypt hash, and use the verify step to check a login attempt. This page runs the well-known bcrypt.js library entirely in your browser, so text you hash here is never uploaded anywhere &mdash; that said, for real production systems, hashing should happen on your server, not in a client-side browser tool.</p>
+  </section>
+  <section class="related-tools">
+      <h2>More Security & Hash</h2>
+      <div class="tool-grid"><a class="tool-card" href="../tools/jwt-decoder.html" data-name="JWT Decoder" data-desc="Decode a JSON Web Token's header and payload instantly."><span class="icon">🪪</span><span class="name">JWT Decoder</span><span class="desc">Decode a JSON Web Token's header and payload instantly.</span></a>
+<a class="tool-card" href="../tools/sha256-hash-generator.html" data-name="SHA-256 Hash Generator" data-desc="Generate a SHA-256 hash of any text instantly."><span class="icon">🔐</span><span class="name">SHA-256 Hash Generator</span><span class="desc">Generate a SHA-256 hash of any text instantly.</span></a>
+<a class="tool-card" href="../tools/md5-hash-generator.html" data-name="MD5 Hash Generator" data-desc="Generate an MD5 checksum of any text instantly."><span class="icon">#️⃣</span><span class="name">MD5 Hash Generator</span><span class="desc">Generate an MD5 checksum of any text instantly.</span></a>
+<a class="tool-card" href="../tools/hmac-generator.html" data-name="HMAC Generator" data-desc="Generate an HMAC signature from a message and secret key."><span class="icon">🔏</span><span class="name">HMAC Generator</span><span class="desc">Generate an HMAC signature from a message and secret key.</span></a></div>
+    </section>
+  <!-- AdSense placeholder: paste your <ins class="adsbygoogle"> ad unit code here -->
+  <div class="ad-slot ad-banner" aria-hidden="true"><span>Advertisement &mdash; above footer</span></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h3>DigitalQuiver Tools</h3>
+        <p style="margin:0;">Free, fast, browser-based utilities. No sign-up, no uploads &mdash; everything runs on your own device.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Categories</h3>
+        <ul><li><a href="../index.html#cat-text">Text Tools</a></li>
+<li><a href="../index.html#cat-generators">Generators</a></li>
+<li><a href="../index.html#cat-converters">Converters</a></li>
+<li><a href="../index.html#cat-calculators">Calculators</a></li>
+<li><a href="../index.html#cat-security">Security & Hash</a></li>
+<li><a href="../index.html#cat-encode">Encode / Decode</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h3>Popular Tools</h3>
+        <ul><li><a href="../tools/word-counter.html">Word Counter</a></li>
+<li><a href="../tools/password-generator.html">Password Generator</a></li>
+<li><a href="../tools/qr-code-generator.html">QR Code Generator</a></li>
+<li><a href="../tools/base64-encoder-decoder.html">Base64 Encoder/Decoder</a></li>
+<li><a href="../tools/percentage-calculator.html">Percentage Calculator</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 DigitalQuiver Tools. All rights reserved.</span>
+      <span>Made for everyone, everywhere.</span>
+    </div>
+  </div>
+</footer>
+<script defer src="../assets/js/main.js"></script>
+  <script defer src="../assets/js/vendor/bcrypt.min.js"></script>
+<script defer src="../assets/js/tools/bcrypt-hash-generator.js"></script>
+</body>
+</html>
