@@ -215,28 +215,28 @@ a:hover { text-decoration: underline; }
 
 /* ---------- Hero (home) ---------- */
 .hero {
-  padding: 40px 0 24px;
+  padding: 56px 0 32px;
   text-align: center;
 }
 .hero-badge {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 7px;
   background: var(--icon-bg);
   color: var(--accent);
   border: 1px solid rgba(245, 165, 36, 0.3);
   border-radius: 999px;
-  padding: 6px 14px;
-  font-size: 0.78rem;
+  padding: 9px 20px;
+  font-size: 0.9rem;
   font-weight: 700;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
 }
 [data-theme="light"] .hero-badge { border-color: rgba(150, 96, 6, 0.3); }
-.hero-badge-icon { width: 13px; height: 13px; }
+.hero-badge-icon { width: 16px; height: 16px; }
 .hero h1 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 800;
-  margin: 0 0 14px;
+  margin: 0 0 18px;
   letter-spacing: -0.02em;
   line-height: 1.15;
 }
@@ -244,10 +244,14 @@ a:hover { text-decoration: underline; }
 .hero h1 .accent-teal { color: var(--accent-2); }
 .hero p {
   color: var(--text-dim);
-  max-width: 560px;
-  margin: 0 auto 22px;
-  font-size: 0.98rem;
+  max-width: 640px;
+  margin: 0 auto 28px;
+  font-size: 1.1rem;
 }
+.hero-cta .btn { padding: 15px 28px; font-size: 1.02rem; }
+.hero .search-wrap { max-width: 560px; }
+.hero .search-wrap svg { width: 20px; height: 20px; left: 18px; }
+.hero .search-wrap input { padding: 17px 18px 17px 50px; font-size: 1.05rem; }
 .hero-cta {
   display: flex;
   flex-wrap: wrap;
@@ -911,7 +915,7 @@ details.more-panel summary {
 }
 
 @media (min-width: 700px) {
-  .hero h1 { font-size: 2.6rem; }
+  .hero h1 { font-size: 3.2rem; }
   .tool-grid { grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); }
 }
 
