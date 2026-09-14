@@ -47,7 +47,17 @@
   <url><loc>https://tools.digitalquiver.com/tools/image-compressor.html</loc></url>
   <url><loc>https://tools.digitalquiver.com/tools/image-resizer.html</loc></url>
   <url><loc>https://tools.digitalquiver.com/tools/image-converter.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/tools/image-rotator.html</loc></url>
   <url><loc>https://tools.digitalquiver.com/tools/pdf-merge.html</loc></url>
   <url><loc>https://tools.digitalquiver.com/tools/pdf-split.html</loc></url>
   <url><loc>https://tools.digitalquiver.com/tools/pdf-compress.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/tools/pdf-rotate.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/tools/pdf-reorder.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/tools/jpg-to-pdf.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/tools/pdf-to-jpg.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/tools/pdf-protect.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/tools/meta-tag-generator.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/tools/robots-txt-generator.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/tools/sitemap-generator.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/tools/user-agent-parser.html</loc></url>
 </urlset>
