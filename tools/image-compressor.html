@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Image Compressor - Free Online Image Size Reducer | DigitalQuiver Tools</title>
+<meta name="description" content="Compress JPEG or WebP images to a smaller file size online for free. Your photo is never uploaded anywhere — compression happens in your browser.">
+<link rel="canonical" href="https://tools.digitalquiver.com/tools/image-compressor.html">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Image Compressor - Free Online Image Size Reducer | DigitalQuiver Tools">
+<meta property="og:description" content="Compress JPEG or WebP images to a smaller file size online for free. Your photo is never uploaded anywhere — compression happens in your browser.">
+<meta property="og:url" content="https://tools.digitalquiver.com/tools/image-compressor.html">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Image Compressor - DigitalQuiver Tools", "url": "https://tools.digitalquiver.com/tools/image-compressor.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any (runs in browser)", "description": "Compress JPEG or WebP images to a smaller file size online for free. Your photo is never uploaded anywhere \u2014 compression happens in your browser.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand"><svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0f1523"/><path d="M14 50 L38 26" stroke="#f5a524" stroke-width="5" stroke-linecap="round"/><path d="M38 26 H22" stroke="#f5a524" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M38 26 V42" stroke="#f5a524" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="46" cy="18" r="4.5" fill="#36d1c4"/></svg>DigitalQuiver <span class="brand-sub">Tools</span></a>
+    <nav class="header-nav">
+      <a href="../index.html">All Tools</a>
+    </nav>
+  </div>
+</header>
+<main class="container tool-main">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#cat-image">Image Tools</a><span class="sep">/</span><span class="current">Image Compressor</span>
+    </nav>
+  <!-- AdSense placeholder: paste your <ins class="adsbygoogle"> ad unit code here -->
+  <div class="ad-slot ad-banner" aria-hidden="true"><span>Advertisement &mdash; top of page</span></div>
+  <div class="tool-header">
+    <h1>Image Compressor</h1>
+    <p class="tool-tagline">Shrink an image's file size right in your browser, before you download it.</p>
+  </div>
+  <div class="tool-widget" id="image-compressor" >
+    <div class="field">
+      <label for="ic-file">Choose an image</label>
+      <input type="file" id="ic-file" accept="image/*">
+    </div>
+    <div class="row">
+      <div class="field">
+        <label for="ic-format">Output format</label>
+        <select id="ic-format">
+          <option value="image/jpeg" selected>JPEG</option>
+          <option value="image/webp">WebP</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="ic-quality">Quality: <span id="ic-quality-val">80</span>%</label>
+        <input type="range" id="ic-quality" min="10" max="100" value="80">
+      </div>
+    </div>
+    <div class="btn-row">
+      <button type="button" class="btn btn-primary" id="ic-compress" disabled>Compress Image</button>
+      <button type="button" class="btn btn-secondary" id="ic-download" disabled>Download</button>
+    </div>
+    <p class="error-msg" id="ic-error"></p>
+    <div class="result-grid">
+      <div class="result-item"><span class="value" id="ic-original-size">&mdash;</span><span class="label">Original Size</span></div>
+      <div class="result-item"><span class="value" id="ic-new-size">&mdash;</span><span class="label">New Size</span></div>
+      <div class="result-item"><span class="value" id="ic-savings">&mdash;</span><span class="label">Reduction</span></div>
+    </div>
+    <div style="text-align:center; margin-top:16px;">
+      <canvas id="ic-canvas" style="max-width:100%; border-radius:10px;"></canvas>
+    </div>
+  </div>
+  <!-- AdSense placeholder: paste your <ins class="adsbygoogle"> ad unit code here -->
+  <div class="ad-slot ad-banner" aria-hidden="true"><span>Advertisement &mdash; in-content</span></div>
+  <section class="tool-content">
+    <h2>What is the Image Compressor?</h2>
+    <p>This tool reduces an image's file size by re-encoding it as JPEG or WebP at a quality level you choose, using your browser's built-in image encoder &mdash; the same technology behind the "Save As" quality slider in most photo editors, just without installing anything.</p>
+    <h2>How to use it</h2>
+    <ol>
+      <li>Choose an image from your device.</li>
+      <li>Pick an output format and drag the quality slider &mdash; lower quality means a smaller file.</li>
+      <li>Click <strong>Compress Image</strong> to see the before/after file size, then <strong>Download</strong> the result.</li>
+    </ol>
+    <p>Smaller images mean faster-loading web pages, quicker uploads, and less storage used, and JPEG or WebP at 70-85% quality is usually visually indistinguishable from the original while cutting file size significantly. WebP typically compresses noticeably smaller than JPEG at the same visual quality, so it's worth comparing both if browser support isn't a concern for your use case. Because everything happens locally on your device using the Canvas API, your photo is never uploaded to any server &mdash; which matters if you're compressing anything personal or sensitive.</p>
+  </section>
+  <section class="related-tools">
+      <h2>More Image Tools</h2>
+      <div class="tool-grid"><a class="tool-card" href="../tools/image-resizer.html" data-name="Image Resizer" data-desc="Resize an image to exact dimensions, with optional locked aspect ratio."><span class="icon">📏</span><span class="name">Image Resizer</span><span class="desc">Resize an image to exact dimensions, with optional locked aspect ratio.</span></a>
+<a class="tool-card" href="../tools/image-converter.html" data-name="Image Format Converter" data-desc="Convert an image between PNG, JPEG and WebP formats."><span class="icon">🔁</span><span class="name">Image Format Converter</span><span class="desc">Convert an image between PNG, JPEG and WebP formats.</span></a></div>
+    </section>
+  <!-- AdSense placeholder: paste your <ins class="adsbygoogle"> ad unit code here -->
+  <div class="ad-slot ad-banner" aria-hidden="true"><span>Advertisement &mdash; above footer</span></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h3>DigitalQuiver Tools</h3>
+        <p style="margin:0;">Free, fast, browser-based utilities. No sign-up, no uploads &mdash; everything runs on your own device.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Categories</h3>
+        <ul><li><a href="../index.html#cat-text">Text Tools</a></li>
+<li><a href="../index.html#cat-generators">Generators</a></li>
+<li><a href="../index.html#cat-converters">Converters</a></li>
+<li><a href="../index.html#cat-calculators">Calculators</a></li>
+<li><a href="../index.html#cat-security">Security & Hash</a></li>
+<li><a href="../index.html#cat-encode">Encode / Decode</a></li>
+<li><a href="../index.html#cat-developer">Developer Tools</a></li>
+<li><a href="../index.html#cat-image">Image Tools</a></li>
+<li><a href="../index.html#cat-pdf">PDF Tools</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h3>Popular Tools</h3>
+        <ul><li><a href="../tools/word-counter.html">Word Counter</a></li>
+<li><a href="../tools/password-generator.html">Password Generator</a></li>
+<li><a href="../tools/qr-code-generator.html">QR Code Generator</a></li>
+<li><a href="../tools/base64-encoder-decoder.html">Base64 Encoder/Decoder</a></li>
+<li><a href="../tools/percentage-calculator.html">Percentage Calculator</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 DigitalQuiver Tools. All rights reserved.</span>
+      <span>Made for everyone, everywhere.</span>
+    </div>
+  </div>
+</footer>
+<script defer src="../assets/js/main.js"></script>
+  
+<script defer src="../assets/js/tools/image-compressor.js"></script>
+</body>
+</html>
