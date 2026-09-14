@@ -483,6 +483,13 @@ input[type="checkbox"], input[type="radio"] {
   margin-top: 4px;
 }
 
+.rt-mark {
+  background: var(--accent);
+  color: var(--accent-ink);
+  border-radius: 3px;
+  padding: 0 1px;
+}
+
 .error-msg {
   color: var(--danger);
   font-size: 0.85rem;
