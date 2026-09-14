@@ -474,6 +474,55 @@ a:hover { text-decoration: underline; }
 .featured-explore { text-align: center; margin-top: 24px; }
 .featured-explore .btn svg { width: 16px; height: 16px; margin-left: 2px; }
 
+/* ---------- Browser support marquee ---------- */
+.brand-marquee {
+  margin-top: 36px;
+  padding: 26px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.brand-marquee-label {
+  text-align: center;
+  color: var(--text-faint);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin: 0 0 20px;
+}
+.marquee-track {
+  overflow: hidden;
+  width: 100%;
+  -webkit-mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
+}
+.marquee-content {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  width: max-content;
+  animation: marquee-scroll 24s linear infinite;
+}
+.marquee-track:hover .marquee-content { animation-play-state: paused; }
+.marquee-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-faint);
+  flex: none;
+  transition: color .15s ease;
+}
+.marquee-logo:hover { color: var(--text); }
+.marquee-logo svg { width: 28px; height: 28px; }
+.marquee-logo span { font-size: 1.05rem; font-weight: 700; white-space: nowrap; }
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-content { animation: none; }
+}
+
 /* ---------- Trust band ---------- */
 .trust-band {
   margin: 40px 0 0;
