@@ -258,9 +258,22 @@ a:hover { text-decoration: underline; }
   transform: translateY(-2px);
 }
 .tool-card .icon {
-  font-size: 1.5rem;
-  display: block;
-  margin-bottom: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--bg-elevated);
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.tool-card .icon .icon-svg {
+  width: 20px;
+  height: 20px;
+}
+.tool-card.article-card .icon {
+  color: var(--accent-2);
 }
 .tool-card .name {
   font-weight: 700;
