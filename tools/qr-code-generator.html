@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QR Code Generator - Create Free QR Codes Online | DigitalQuiver Tools</title>
+<meta name="description" content="Create a free QR code from any text or URL, choose the error-correction level, and download it as a PNG. Generated entirely in your browser.">
+<link rel="canonical" href="https://tools.digitalquiver.com/tools/qr-code-generator.html">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="QR Code Generator - Create Free QR Codes Online | DigitalQuiver Tools">
+<meta property="og:description" content="Create a free QR code from any text or URL, choose the error-correction level, and download it as a PNG. Generated entirely in your browser.">
+<meta property="og:url" content="https://tools.digitalquiver.com/tools/qr-code-generator.html">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "QR Code Generator - DigitalQuiver Tools", "url": "https://tools.digitalquiver.com/tools/qr-code-generator.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any (runs in browser)", "description": "Create a free QR code from any text or URL, choose the error-correction level, and download it as a PNG. Generated entirely in your browser.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand"><svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0f1523"/><path d="M14 50 L38 26" stroke="#f5a524" stroke-width="5" stroke-linecap="round"/><path d="M38 26 H22" stroke="#f5a524" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M38 26 V42" stroke="#f5a524" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="46" cy="18" r="4.5" fill="#36d1c4"/></svg>DigitalQuiver <span class="brand-sub">Tools</span></a>
+    <nav class="header-nav">
+      <a href="../index.html">All Tools</a>
+    </nav>
+  </div>
+</header>
+<main class="container tool-main">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#cat-generators">Generators</a><span class="sep">/</span><span class="current">QR Code Generator</span>
+    </nav>
+  <!-- AdSense placeholder: paste your <ins class="adsbygoogle"> ad unit code here -->
+  <div class="ad-slot ad-banner" aria-hidden="true"><span>Advertisement &mdash; top of page</span></div>
+  <div class="tool-header">
+    <h1>QR Code Generator</h1>
+    <p class="tool-tagline">Turn any text, link or Wi-Fi detail into a downloadable QR code.</p>
+  </div>
+  <div class="tool-widget" id="qr-code-generator" >
+    <div class="field">
+      <label for="qr-input">Text or URL to encode</label>
+      <textarea id="qr-input" placeholder="https://example.com" style="min-height:90px;">https://digitalquiver.com</textarea>
+    </div>
+    <div class="row">
+      <div class="field">
+        <label for="qr-ecc">Error correction</label>
+        <select id="qr-ecc">
+          <option value="L">Low (L) &mdash; smallest code</option>
+          <option value="M" selected>Medium (M) &mdash; recommended</option>
+          <option value="Q">Quartile (Q)</option>
+          <option value="H">High (H) &mdash; most durable</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="qr-size">Image size</label>
+        <select id="qr-size">
+          <option value="200">200 &times; 200 px</option>
+          <option value="300" selected>300 &times; 300 px</option>
+          <option value="500">500 &times; 500 px</option>
+          <option value="800">800 &times; 800 px</option>
+        </select>
+      </div>
+    </div>
+    <div class="btn-row">
+      <button type="button" class="btn btn-primary" id="qr-generate">Generate QR Code</button>
+      <button type="button" class="btn btn-secondary" id="qr-download">Download PNG</button>
+    </div>
+    <p class="error-msg" id="qr-error">Please enter some text first.</p>
+    <div style="text-align:center; margin-top:18px;">
+      <canvas id="qr-canvas" style="background:#fff; border-radius:10px; max-width:100%;"></canvas>
+    </div>
+  </div>
+  <!-- AdSense placeholder: paste your <ins class="adsbygoogle"> ad unit code here -->
+  <div class="ad-slot ad-banner" aria-hidden="true"><span>Advertisement &mdash; in-content</span></div>
+  <section class="tool-content">
+    <h2>What is the QR Code Generator?</h2>
+    <p>This tool converts any text &mdash; a website link, a Wi-Fi password, a plain message &mdash; into a scannable QR code image that you can download as a PNG. QR codes are read by smartphone cameras and dedicated scanner apps, making them useful for printed materials, business cards, posters and packaging.</p>
+    <h2>How to use it</h2>
+    <ol>
+      <li>Type or paste the text or link you want to encode.</li>
+      <li>Choose an error-correction level: higher levels make the code more resistant to smudges or partial damage, at the cost of a slightly denser pattern.</li>
+      <li>Pick an output size, click <strong>Generate QR Code</strong>, then <strong>Download PNG</strong>.</li>
+    </ol>
+    <p>Error correction works by adding redundant data to the code so a scanner can still read it even if part of the image is obscured or poorly printed; Medium is a sensible default for screens, while High suits stickers or labels that might get scuffed. The code is drawn directly onto an HTML canvas in your browser using open-source encoding logic, so nothing you type is sent anywhere. Because it works entirely offline, you can safely generate QR codes for private information like an internal Wi-Fi password or a temporary access link without it ever leaving your device.</p>
+  </section>
+  <section class="related-tools">
+      <h2>More Generators</h2>
+      <div class="tool-grid"><a class="tool-card" href="../tools/password-generator.html" data-name="Password Generator" data-desc="Create strong, random passwords using your browser's secure randomness."><span class="icon">🔑</span><span class="name">Password Generator</span><span class="desc">Create strong, random passwords using your browser's secure randomness.</span></a>
+<a class="tool-card" href="../tools/uuid-generator.html" data-name="UUID Generator" data-desc="Generate one or many version-4 UUIDs / GUIDs instantly."><span class="icon">🆔</span><span class="name">UUID Generator</span><span class="desc">Generate one or many version-4 UUIDs / GUIDs instantly.</span></a>
+<a class="tool-card" href="../tools/lorem-ipsum-generator.html" data-name="Lorem Ipsum Generator" data-desc="Generate placeholder Lorem Ipsum text by paragraph, sentence or word."><span class="icon">📄</span><span class="name">Lorem Ipsum Generator</span><span class="desc">Generate placeholder Lorem Ipsum text by paragraph, sentence or word.</span></a>
+<a class="tool-card" href="../tools/random-number-generator.html" data-name="Random Number Generator" data-desc="Generate random whole or decimal numbers within any range."><span class="icon">🎲</span><span class="name">Random Number Generator</span><span class="desc">Generate random whole or decimal numbers within any range.</span></a></div>
+    </section>
+  <!-- AdSense placeholder: paste your <ins class="adsbygoogle"> ad unit code here -->
+  <div class="ad-slot ad-banner" aria-hidden="true"><span>Advertisement &mdash; above footer</span></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h3>DigitalQuiver Tools</h3>
+        <p style="margin:0;">Free, fast, browser-based utilities. No sign-up, no uploads &mdash; everything runs on your own device.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Categories</h3>
+        <ul><li><a href="../index.html#cat-text">Text Tools</a></li>
+<li><a href="../index.html#cat-generators">Generators</a></li>
+<li><a href="../index.html#cat-converters">Converters</a></li>
+<li><a href="../index.html#cat-calculators">Calculators</a></li>
+<li><a href="../index.html#cat-security">Security & Hash</a></li>
+<li><a href="../index.html#cat-encode">Encode / Decode</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h3>Popular Tools</h3>
+        <ul><li><a href="../tools/word-counter.html">Word Counter</a></li>
+<li><a href="../tools/password-generator.html">Password Generator</a></li>
+<li><a href="../tools/qr-code-generator.html">QR Code Generator</a></li>
+<li><a href="../tools/base64-encoder-decoder.html">Base64 Encoder/Decoder</a></li>
+<li><a href="../tools/percentage-calculator.html">Percentage Calculator</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 DigitalQuiver Tools. All rights reserved.</span>
+      <span>Made for everyone, everywhere.</span>
+    </div>
+  </div>
+</footer>
+<script defer src="../assets/js/main.js"></script>
+  <script defer src="../assets/js/vendor/qrcode.min.js"></script>
+<script defer src="../assets/js/tools/qr-code-generator.js"></script>
+</body>
+</html>
