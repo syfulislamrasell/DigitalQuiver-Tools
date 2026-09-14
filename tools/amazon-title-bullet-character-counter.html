@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem("dq-theme");
+    if (!t) { t = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"; }
+    if (t === "light") { document.documentElement.setAttribute("data-theme", "light"); }
+  } catch (e) {}
+})();
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6PK9VV63JE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-6PK9VV63JE');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amazon Title & Bullet Point Character Counter for Sellers | DigitalQuiver Tools</title>
+<meta name="description" content="Count characters in your Amazon product title and 5 bullet points live, with limit indicators based on Amazon's current listing character limits.">
+<link rel="canonical" href="https://tools.digitalquiver.com/tools/amazon-title-bullet-character-counter.html">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Amazon Title & Bullet Point Character Counter for Sellers | DigitalQuiver Tools">
+<meta property="og:description" content="Count characters in your Amazon product title and 5 bullet points live, with limit indicators based on Amazon's current listing character limits.">
+<meta property="og:url" content="https://tools.digitalquiver.com/tools/amazon-title-bullet-character-counter.html">
+<meta property="og:image" content="https://tools.digitalquiver.com/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tools.digitalquiver.com/assets/img/og-image.jpg">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Amazon Title/Bullet Character Counter - DigitalQuiver Tools", "url": "https://tools.digitalquiver.com/tools/amazon-title-bullet-character-counter.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any (runs in browser)", "description": "Count characters in your Amazon product title and 5 bullet points live, with limit indicators based on Amazon's current listing character limits.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand"><svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0f1523"/><path d="M14 50 L38 26" stroke="#f5a524" stroke-width="5" stroke-linecap="round"/><path d="M38 26 H22" stroke="#f5a524" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M38 26 V42" stroke="#f5a524" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="46" cy="18" r="4.5" fill="#36d1c4"/></svg>DigitalQuiver <span class="brand-sub">Tools</span></a>
+    <nav class="header-nav">
+      <a href="../index.html">All Tools</a>
+      <a href="../index.html#cat-amazon">Amazon Tools</a>
+      <a href="../blog/index.html">Blog</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch between light and dark theme" title="Switch theme"><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+    </nav>
+  </div>
+</header>
+<main class="container tool-main">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#cat-amazon">Amazon Seller Tools</a><span class="sep">/</span><span class="current">Amazon Title/Bullet Character Counter</span>
+    </nav>
+  <div class="ad-slot">
+    <div class="ad-slot-inner"><script>
+(function () {
+  var isNarrow = window.innerWidth < 700;
+  var key = isNarrow ? "d8d6acbca52509f9d1a38150a06f159e" : "5cefb306c32d814f64e662478bd89dcb";
+  var w = isNarrow ? 320 : 728;
+  var h = isNarrow ? 50 : 90;
+  window.atOptions = { key: key, format: "iframe", height: h, width: w, params: {} };
+  document.write('<scr' + 'ipt src="https://www.highrevenueformat.com/' + key + '/invoke.js"><' + '/scr' + 'ipt>');
+})();
+</script></div>
+  </div>
+  <div class="tool-header">
+    <h1>Amazon Title/Bullet Character Counter</h1>
+    <p class="tool-tagline">Live character counts for your Amazon listing title and bullet points.</p>
+  </div>
+  <div class="tool-widget" id="amazon-title-bullet-character-counter" >
+    <div class="field">
+      <label for="tc-title">Product title</label>
+      <input type="text" id="tc-title" placeholder="Enter your product title...">
+      <div class="hint"><span id="tc-title-count">0 / 75</span></div>
+    </div>
+    <div class="field"><label for="tc-bullet1">Bullet point 1</label><textarea id="tc-bullet1" style="min-height:60px;"></textarea><div class="hint"><span id="tc-bullet1-count">0 / 255</span></div></div>
+    <div class="field"><label for="tc-bullet2">Bullet point 2</label><textarea id="tc-bullet2" style="min-height:60px;"></textarea><div class="hint"><span id="tc-bullet2-count">0 / 255</span></div></div>
+    <div class="field"><label for="tc-bullet3">Bullet point 3</label><textarea id="tc-bullet3" style="min-height:60px;"></textarea><div class="hint"><span id="tc-bullet3-count">0 / 255</span></div></div>
+    <div class="field"><label for="tc-bullet4">Bullet point 4</label><textarea id="tc-bullet4" style="min-height:60px;"></textarea><div class="hint"><span id="tc-bullet4-count">0 / 255</span></div></div>
+    <div class="field"><label for="tc-bullet5">Bullet point 5</label><textarea id="tc-bullet5" style="min-height:60px;"></textarea><div class="hint"><span id="tc-bullet5-count">0 / 255</span></div></div>
+    <p style="font-size:0.85rem;color:var(--text-dim);" id="tc-total">0 / 1000 recommended</p>
+  </div>
+  <div class="ad-slot">
+    <div class="ad-slot-inner"><script>
+atOptions = { key: "c6eb8755d17084a3a802e7cd45d22253", format: "iframe", height: 250, width: 300, params: {} };
+</script>
+<script src="https://www.highrevenueformat.com/c6eb8755d17084a3a802e7cd45d22253/invoke.js"></script></div>
+  </div>
+  <section class="tool-content">
+    <h2>What is the Amazon Title/Bullet Character Counter?</h2>
+    <p>This tool live-counts the characters in your Amazon product title and five bullet points against Amazon's current listing limits, so you can see at a glance what needs trimming before you save your listing.</p>
+    <h2>Current Amazon limits (2026)</h2>
+    <ul>
+      <li><strong>Title:</strong> 75 characters including spaces, for all categories except media (books, music, video) &mdash; this dropped from a much looser historical limit on July 27, 2026, specifically so titles display fully on mobile search results.</li>
+      <li><strong>Bullet points:</strong> up to 255 characters each (500 for registered brand vendors), with Amazon recommending a combined total under 1,000 characters across all five bullets, since only the first 1,000 bytes are indexed for search.</li>
+    </ul>
+    <p>Because this is a recent, actively-enforced rule change, double check your category's exact current limit in Seller Central if your listing is in a specialty category, as some category-specific exceptions can apply.</p>
+    <h2>How to use it</h2>
+    <ol>
+      <li>Paste or type your title &mdash; the counter turns amber near the limit and red once you're over it.</li>
+      <li>Fill in up to five bullet points; each is checked against the 255-character cap independently.</li>
+      <li>Watch the combined total at the bottom to stay under Amazon's ~1,000 character indexing cutoff.</li>
+    </ol>
+  </section>
+  <section class="related-tools">
+      <h2>More Amazon Seller Tools</h2>
+      <div class="tool-grid"><a class="tool-card" href="../tools/fba-profit-calculator.html" data-name="FBA Profit & ROI Calculator" data-desc="Work out your real profit, margin and ROI on any Amazon FBA product."><span class="icon"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" /> <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" /></svg></span><span class="name">FBA Profit & ROI Calculator</span><span class="desc">Work out your real profit, margin and ROI on any Amazon FBA product.</span></a>
+<a class="tool-card" href="../tools/fba-dimensional-weight-calculator.html" data-name="FBA Dimensional Weight Calculator" data-desc="Calculate dimensional weight from package dimensions using Amazon's divisor."><span class="icon"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" /> <path d="m3.3 7 8.7 5 8.7-5" /> <path d="M12 22V12" /></svg></span><span class="name">FBA Dimensional Weight Calculator</span><span class="desc">Calculate dimensional weight from package dimensions using Amazon's divisor.</span></a>
+<a class="tool-card" href="../tools/ppc-acos-roas-calculator.html" data-name="PPC ACOS/ROAS Calculator" data-desc="Calculate ACOS, ROAS and your break-even ad spend for Amazon PPC."><span class="icon"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <circle cx="12" cy="12" r="6" /> <circle cx="12" cy="12" r="2" /></svg></span><span class="name">PPC ACOS/ROAS Calculator</span><span class="desc">Calculate ACOS, ROAS and your break-even ad spend for Amazon PPC.</span></a>
+<a class="tool-card" href="../tools/profit-margin-calculator.html" data-name="Profit Margin Calculator" data-desc="Calculate profit, margin % and markup % from cost and selling price."><span class="icon"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" /> <path d="M12 18V6" /></svg></span><span class="name">Profit Margin Calculator</span><span class="desc">Calculate profit, margin % and markup % from cost and selling price.</span></a></div>
+    </section>
+  <div class="ad-slot">
+    <div class="ad-slot-inner"><script>
+(function () {
+  var isNarrow = window.innerWidth < 700;
+  var key = isNarrow ? "d8d6acbca52509f9d1a38150a06f159e" : "5cefb306c32d814f64e662478bd89dcb";
+  var w = isNarrow ? 320 : 728;
+  var h = isNarrow ? 50 : 90;
+  window.atOptions = { key: key, format: "iframe", height: h, width: w, params: {} };
+  document.write('<scr' + 'ipt src="https://www.highrevenueformat.com/' + key + '/invoke.js"><' + '/scr' + 'ipt>');
+})();
+</script></div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h3>DigitalQuiver Tools</h3>
+        <p style="margin:0;">Free, fast, browser-based utilities. No sign-up, no uploads &mdash; everything runs on your own device.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Categories</h3>
+        <ul><li><a href="../index.html#cat-text">Text Tools</a></li>
+<li><a href="../index.html#cat-generators">Generators</a></li>
+<li><a href="../index.html#cat-converters">Converters</a></li>
+<li><a href="../index.html#cat-calculators">Calculators</a></li>
+<li><a href="../index.html#cat-security">Security & Hash</a></li>
+<li><a href="../index.html#cat-encode">Encode / Decode</a></li>
+<li><a href="../index.html#cat-developer">Developer Tools</a></li>
+<li><a href="../index.html#cat-image">Image Tools</a></li>
+<li><a href="../index.html#cat-pdf">PDF Tools</a></li>
+<li><a href="../index.html#cat-seo">SEO Tools</a></li>
+<li><a href="../index.html#cat-misc">Misc Tools</a></li>
+<li><a href="../index.html#cat-amazon">Amazon Seller Tools</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h3>Popular Tools</h3>
+        <ul><li><a href="../tools/word-counter.html">Word Counter</a></li>
+<li><a href="../tools/password-generator.html">Password Generator</a></li>
+<li><a href="../tools/qr-code-generator.html">QR Code Generator</a></li>
+<li><a href="../tools/base64-encoder-decoder.html">Base64 Encoder/Decoder</a></li>
+<li><a href="../tools/percentage-calculator.html">Percentage Calculator</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Connect</h3>
+        <ul>
+          <li><a href="../blog/index.html">Blog</a></li>
+          <li><a href="mailto:digitalquiverinfo@gmail.com">Email Us</a></li>
+          <li><a href="https://www.facebook.com/digitalquiver/" target="_blank" rel="noopener">Facebook Page</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 DigitalQuiver Tools. All rights reserved.</span>
+      <span>Built by <a href="https://digitalquiver.com/" target="_blank" rel="noopener">DigitalQuiver Agency</a></span>
+    </div>
+  </div>
+</footer>
+<script defer src="../assets/js/main.js"></script>
+  
+<script defer src="../assets/js/tools/amazon-title-bullet-character-counter.js"></script>
+</body>
+</html>

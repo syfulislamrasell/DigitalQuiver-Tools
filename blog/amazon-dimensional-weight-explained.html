@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem("dq-theme");
+    if (!t) { t = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"; }
+    if (t === "light") { document.documentElement.setAttribute("data-theme", "light"); }
+  } catch (e) {}
+})();
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6PK9VV63JE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-6PK9VV63JE');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why a Light, Bulky Box Can Cost More to Ship Than a Heavy One | DigitalQuiver Tools Blog</title>
+<meta name="description" content="Amazon and most carriers charge shipping based on whichever is bigger: actual weight or dimensional (volume-based) weight. Here's how dimensional weight is calculated and why it catches sellers off guard.">
+<link rel="canonical" href="https://tools.digitalquiver.com/blog/amazon-dimensional-weight-explained.html">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Why a Light, Bulky Box Can Cost More to Ship Than a Heavy One">
+<meta property="og:description" content="Amazon and most carriers charge shipping based on whichever is bigger: actual weight or dimensional (volume-based) weight. Here's how dimensional weight is calculated and why it catches sellers off guard.">
+<meta property="og:url" content="https://tools.digitalquiver.com/blog/amazon-dimensional-weight-explained.html">
+<meta property="og:image" content="https://tools.digitalquiver.com/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tools.digitalquiver.com/assets/img/og-image.jpg">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Why a Light, Bulky Box Can Cost More to Ship Than a Heavy One", "description": "Amazon and most carriers charge shipping based on whichever is bigger: actual weight or dimensional (volume-based) weight. Here's how dimensional weight is calculated and why it catches sellers off guard.", "datePublished": "2026-09-14", "url": "https://tools.digitalquiver.com/blog/amazon-dimensional-weight-explained.html", "author": {"@type": "Organization", "name": "DigitalQuiver Tools"}}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand"><svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0f1523"/><path d="M14 50 L38 26" stroke="#f5a524" stroke-width="5" stroke-linecap="round"/><path d="M38 26 H22" stroke="#f5a524" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M38 26 V42" stroke="#f5a524" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="46" cy="18" r="4.5" fill="#36d1c4"/></svg>DigitalQuiver <span class="brand-sub">Tools</span></a>
+    <nav class="header-nav">
+      <a href="../index.html">All Tools</a>
+      <a href="../index.html#cat-amazon">Amazon Tools</a>
+      <a href="../blog/index.html">Blog</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch between light and dark theme" title="Switch theme"><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+    </nav>
+  </div>
+</header>
+<main class="container tool-main">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../index.html">Home</a><span class="sep">/</span><a href="index.html">Blog</a><span class="sep">/</span><span class="current">Why a Light, Bulky Box Can Cost More to Ship Than a Heavy One</span>
+  </nav>
+  <div class="ad-slot">
+    <div class="ad-slot-inner"><script>
+(function () {
+  var isNarrow = window.innerWidth < 700;
+  var key = isNarrow ? "d8d6acbca52509f9d1a38150a06f159e" : "5cefb306c32d814f64e662478bd89dcb";
+  var w = isNarrow ? 320 : 728;
+  var h = isNarrow ? 50 : 90;
+  window.atOptions = { key: key, format: "iframe", height: h, width: w, params: {} };
+  document.write('<scr' + 'ipt src="https://www.highrevenueformat.com/' + key + '/invoke.js"><' + '/scr' + 'ipt>');
+})();
+</script></div>
+  </div>
+  <div class="tool-header">
+    <span class="article-badge">Article</span>
+    <h1>Why a Light, Bulky Box Can Cost More to Ship Than a Heavy One</h1>
+    <p class="tool-tagline">Published 2026-09-14</p>
+  </div>
+  <section class="tool-content">
+    <h2>Weight isn't the only thing that gets billed</h2>
+    <p>It seems intuitive that a lighter package should cost less to ship than a heavier one. But carriers &mdash; including Amazon for FBA inbound and outbound shipments &mdash; also bill based on a package's volume, because a large, lightweight box takes up truck and warehouse space that a small, heavy one doesn't. Whichever number is bigger, actual weight or "dimensional weight," is what you get charged on.</p>
+    <h2>How dimensional weight is calculated</h2>
+    <p>Dimensional weight (in pounds) = length &times; width &times; height (in inches) &divide; a divisor set by the carrier. A larger divisor produces a smaller dimensional weight, so the divisor number matters a lot &mdash; and it isn't fixed forever. Amazon's FBA divisor for US domestic shipments dropped from 166 to 139 in January 2026, aligning it with FedEx and UPS ground &mdash; a change that quietly increased dimensional weight (and therefore shipping cost) for the same box size.</p>
+    <h2>Why this catches sellers off guard</h2>
+    <p>A product that seems cheap to ship based on its scale weight can suddenly look much more expensive once you calculate its dimensional weight &mdash; especially for anything bulky-but-light: pillows, lampshades, inflatable products, anything shipped in an oversized box relative to its actual mass. Repackaging a product into a tighter-fitting box, when possible, is one of the few ways sellers can directly reduce dimensional weight without changing the product itself.</p>
+    <h2>Check both numbers before you finalize packaging</h2>
+    <p>Our <a href="../tools/fba-dimensional-weight-calculator.html">FBA Dimensional Weight Calculator</a> computes dimensional weight from your package's length, width and height using Amazon's current 139 divisor (editable if you need a different carrier's number), and compares it against your actual scale weight so you know which one you'll actually be billed on before your product ships.</p>
+  </section>
+  <div class="big-result" style="margin-top:24px;">
+    <div class="label" style="margin-bottom:10px;">Ready to try it yourself?</div>
+    <a class="btn btn-primary" href="../tools/fba-dimensional-weight-calculator.html">Open the FBA Dimensional Weight Calculator →</a>
+  </div>
+  <div class="ad-slot">
+    <div class="ad-slot-inner"><script>
+atOptions = { key: "c6eb8755d17084a3a802e7cd45d22253", format: "iframe", height: 250, width: 300, params: {} };
+</script>
+<script src="https://www.highrevenueformat.com/c6eb8755d17084a3a802e7cd45d22253/invoke.js"></script></div>
+  </div>
+  <section class="related-tools"><h2>More Amazon Seller Tools Articles</h2><ul><li><a href="why-your-amazon-listing-looks-profitable-but-isnt.html">Why Your Amazon Listing Looks Profitable But Isn't</a></li>
+<li><a href="acos-vs-roas-which-number-actually-matters.html">ACOS vs. ROAS: Which Number Actually Matters for Your Ads?</a></li>
+<li><a href="margin-vs-markup-the-pricing-mistake.html">Margin vs. Markup: The Pricing Mix-Up That Costs Real Money</a></li></ul></section>
+  <div class="ad-slot">
+    <div class="ad-slot-inner"><script>
+(function () {
+  var isNarrow = window.innerWidth < 700;
+  var key = isNarrow ? "d8d6acbca52509f9d1a38150a06f159e" : "5cefb306c32d814f64e662478bd89dcb";
+  var w = isNarrow ? 320 : 728;
+  var h = isNarrow ? 50 : 90;
+  window.atOptions = { key: key, format: "iframe", height: h, width: w, params: {} };
+  document.write('<scr' + 'ipt src="https://www.highrevenueformat.com/' + key + '/invoke.js"><' + '/scr' + 'ipt>');
+})();
+</script></div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h3>DigitalQuiver Tools</h3>
+        <p style="margin:0;">Free, fast, browser-based utilities. No sign-up, no uploads &mdash; everything runs on your own device.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Categories</h3>
+        <ul><li><a href="../index.html#cat-text">Text Tools</a></li>
+<li><a href="../index.html#cat-generators">Generators</a></li>
+<li><a href="../index.html#cat-converters">Converters</a></li>
+<li><a href="../index.html#cat-calculators">Calculators</a></li>
+<li><a href="../index.html#cat-security">Security & Hash</a></li>
+<li><a href="../index.html#cat-encode">Encode / Decode</a></li>
+<li><a href="../index.html#cat-developer">Developer Tools</a></li>
+<li><a href="../index.html#cat-image">Image Tools</a></li>
+<li><a href="../index.html#cat-pdf">PDF Tools</a></li>
+<li><a href="../index.html#cat-seo">SEO Tools</a></li>
+<li><a href="../index.html#cat-misc">Misc Tools</a></li>
+<li><a href="../index.html#cat-amazon">Amazon Seller Tools</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h3>Popular Tools</h3>
+        <ul><li><a href="../tools/word-counter.html">Word Counter</a></li>
+<li><a href="../tools/password-generator.html">Password Generator</a></li>
+<li><a href="../tools/qr-code-generator.html">QR Code Generator</a></li>
+<li><a href="../tools/base64-encoder-decoder.html">Base64 Encoder/Decoder</a></li>
+<li><a href="../tools/percentage-calculator.html">Percentage Calculator</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Connect</h3>
+        <ul>
+          <li><a href="../blog/index.html">Blog</a></li>
+          <li><a href="mailto:digitalquiverinfo@gmail.com">Email Us</a></li>
+          <li><a href="https://www.facebook.com/digitalquiver/" target="_blank" rel="noopener">Facebook Page</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 DigitalQuiver Tools. All rights reserved.</span>
+      <span>Built by <a href="https://digitalquiver.com/" target="_blank" rel="noopener">DigitalQuiver Agency</a></span>
+    </div>
+  </div>
+</footer>
+<script defer src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem("dq-theme");
+    if (!t) { t = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"; }
+    if (t === "light") { document.documentElement.setAttribute("data-theme", "light"); }
+  } catch (e) {}
+})();
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6PK9VV63JE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-6PK9VV63JE');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FBA Dimensional Weight Calculator - Amazon Shipping Weight Tool | DigitalQuiver Tools</title>
+<meta name="description" content="Calculate dimensional (volumetric) weight for Amazon FBA shipments from length, width and height. Uses Amazon's current 139 divisor, editable for other carriers.">
+<link rel="canonical" href="https://tools.digitalquiver.com/tools/fba-dimensional-weight-calculator.html">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FBA Dimensional Weight Calculator - Amazon Shipping Weight Tool | DigitalQuiver Tools">
+<meta property="og:description" content="Calculate dimensional (volumetric) weight for Amazon FBA shipments from length, width and height. Uses Amazon's current 139 divisor, editable for other carriers.">
+<meta property="og:url" content="https://tools.digitalquiver.com/tools/fba-dimensional-weight-calculator.html">
+<meta property="og:image" content="https://tools.digitalquiver.com/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tools.digitalquiver.com/assets/img/og-image.jpg">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "FBA Dimensional Weight Calculator - DigitalQuiver Tools", "url": "https://tools.digitalquiver.com/tools/fba-dimensional-weight-calculator.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any (runs in browser)", "description": "Calculate dimensional (volumetric) weight for Amazon FBA shipments from length, width and height. Uses Amazon's current 139 divisor, editable for other carriers.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand"><svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0f1523"/><path d="M14 50 L38 26" stroke="#f5a524" stroke-width="5" stroke-linecap="round"/><path d="M38 26 H22" stroke="#f5a524" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M38 26 V42" stroke="#f5a524" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="46" cy="18" r="4.5" fill="#36d1c4"/></svg>DigitalQuiver <span class="brand-sub">Tools</span></a>
+    <nav class="header-nav">
+      <a href="../index.html">All Tools</a>
+      <a href="../index.html#cat-amazon">Amazon Tools</a>
+      <a href="../blog/index.html">Blog</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch between light and dark theme" title="Switch theme"><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+    </nav>
+  </div>
+</header>
+<main class="container tool-main">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#cat-amazon">Amazon Seller Tools</a><span class="sep">/</span><span class="current">FBA Dimensional Weight Calculator</span>
+    </nav>
+  <div class="ad-slot">
+    <div class="ad-slot-inner"><script>
+(function () {
+  var isNarrow = window.innerWidth < 700;
+  var key = isNarrow ? "d8d6acbca52509f9d1a38150a06f159e" : "5cefb306c32d814f64e662478bd89dcb";
+  var w = isNarrow ? 320 : 728;
+  var h = isNarrow ? 50 : 90;
+  window.atOptions = { key: key, format: "iframe", height: h, width: w, params: {} };
+  document.write('<scr' + 'ipt src="https://www.highrevenueformat.com/' + key + '/invoke.js"><' + '/scr' + 'ipt>');
+})();
+</script></div>
+  </div>
+  <div class="tool-header">
+    <h1>FBA Dimensional Weight Calculator</h1>
+    <p class="tool-tagline">Calculate dimensional weight from package dimensions using Amazon's divisor.</p>
+  </div>
+  <div class="tool-widget" id="fba-dimensional-weight-calculator" >
+    <div class="row">
+      <div class="field"><label for="dw-length">Length (in)</label><input type="number" id="dw-length" value="18" step="0.01"></div>
+      <div class="field"><label for="dw-width">Width (in)</label><input type="number" id="dw-width" value="14" step="0.01"></div>
+      <div class="field"><label for="dw-height">Height (in)</label><input type="number" id="dw-height" value="10" step="0.01"></div>
+    </div>
+    <div class="row">
+      <div class="field"><label for="dw-divisor">Divisor</label><input type="number" id="dw-divisor" value="139" step="1"></div>
+      <div class="field"><label for="dw-actual">Actual weight (lb, optional)</label><input type="number" id="dw-actual" value="" step="0.01"></div>
+    </div>
+    <p class="field .hint" style="font-size:0.8rem;color:var(--text-faint);margin-top:-8px;">139 is Amazon's current US FBA divisor (in&sup3;/lb, effective since January 2026). Change it if you're calculating for a different carrier or region.</p>
+    <div class="result-grid">
+      <div class="result-item"><span class="value" id="dw-dim-weight">0 lb</span><span class="label">Dimensional Weight</span></div>
+      <div class="result-item"><span class="value" id="dw-billable">0 lb</span><span class="label">Billable Weight (greater of the two)</span></div>
+    </div>
+  </div>
+  <div class="ad-slot">
+    <div class="ad-slot-inner"><script>
+atOptions = { key: "c6eb8755d17084a3a802e7cd45d22253", format: "iframe", height: 250, width: 300, params: {} };
+</script>
+<script src="https://www.highrevenueformat.com/c6eb8755d17084a3a802e7cd45d22253/invoke.js"></script></div>
+  </div>
+  <section class="tool-content">
+    <h2>What is the FBA Dimensional Weight Calculator?</h2>
+    <p>Amazon (and most carriers) charge shipping based on whichever is greater: a package's actual weight, or its "dimensional weight" &mdash; a volume-based weight calculated from the package's length, width and height. Large, lightweight items often get charged by dimensional weight instead of their real weight, which is why it's worth checking before you finalize packaging.</p>
+    <h2>The formula</h2>
+    <p>Dimensional weight (lb) = (Length &times; Width &times; Height, in inches) &divide; divisor. Amazon's FBA divisor for US domestic shipments is currently <strong>139</strong>, the same divisor used by FedEx and UPS ground &mdash; this changed from 166 to 139 in January 2026, so if you're using an older figure, update it.</p>
+    <h2>How to use it</h2>
+    <ol>
+      <li>Enter your package's length, width and height in inches.</li>
+      <li>Leave the divisor at 139 for current Amazon US FBA calculations, or change it for a different carrier/region.</li>
+      <li>Optionally enter the actual scale weight to see which figure (dimensional or actual) is higher &mdash; that's the one you'll be billed on.</li>
+    </ol>
+    <p>This tool calculates weight only, not Amazon's size/weight tier or fee amount, since those thresholds are updated by Amazon periodically &mdash; check your current tier in Seller Central's FBA revenue calculator once you know the dimensional weight.</p>
+  </section>
+  <section class="related-tools">
+      <h2>More Amazon Seller Tools</h2>
+      <div class="tool-grid"><a class="tool-card" href="../tools/fba-profit-calculator.html" data-name="FBA Profit & ROI Calculator" data-desc="Work out your real profit, margin and ROI on any Amazon FBA product."><span class="icon"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" /> <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" /></svg></span><span class="name">FBA Profit & ROI Calculator</span><span class="desc">Work out your real profit, margin and ROI on any Amazon FBA product.</span></a>
+<a class="tool-card" href="../tools/ppc-acos-roas-calculator.html" data-name="PPC ACOS/ROAS Calculator" data-desc="Calculate ACOS, ROAS and your break-even ad spend for Amazon PPC."><span class="icon"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <circle cx="12" cy="12" r="6" /> <circle cx="12" cy="12" r="2" /></svg></span><span class="name">PPC ACOS/ROAS Calculator</span><span class="desc">Calculate ACOS, ROAS and your break-even ad spend for Amazon PPC.</span></a>
+<a class="tool-card" href="../tools/profit-margin-calculator.html" data-name="Profit Margin Calculator" data-desc="Calculate profit, margin % and markup % from cost and selling price."><span class="icon"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" /> <path d="M12 18V6" /></svg></span><span class="name">Profit Margin Calculator</span><span class="desc">Calculate profit, margin % and markup % from cost and selling price.</span></a>
+<a class="tool-card" href="../tools/kdp-royalty-calculator.html" data-name="KDP Royalty Calculator" data-desc="Estimate your Kindle eBook or paperback royalty using Amazon's published formulas."><span class="icon"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v16" /> <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" /></svg></span><span class="name">KDP Royalty Calculator</span><span class="desc">Estimate your Kindle eBook or paperback royalty using Amazon's published formulas.</span></a></div>
+    </section>
+  <div class="ad-slot">
+    <div class="ad-slot-inner"><script>
+(function () {
+  var isNarrow = window.innerWidth < 700;
+  var key = isNarrow ? "d8d6acbca52509f9d1a38150a06f159e" : "5cefb306c32d814f64e662478bd89dcb";
+  var w = isNarrow ? 320 : 728;
+  var h = isNarrow ? 50 : 90;
+  window.atOptions = { key: key, format: "iframe", height: h, width: w, params: {} };
+  document.write('<scr' + 'ipt src="https://www.highrevenueformat.com/' + key + '/invoke.js"><' + '/scr' + 'ipt>');
+})();
+</script></div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h3>DigitalQuiver Tools</h3>
+        <p style="margin:0;">Free, fast, browser-based utilities. No sign-up, no uploads &mdash; everything runs on your own device.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Categories</h3>
+        <ul><li><a href="../index.html#cat-text">Text Tools</a></li>
+<li><a href="../index.html#cat-generators">Generators</a></li>
+<li><a href="../index.html#cat-converters">Converters</a></li>
+<li><a href="../index.html#cat-calculators">Calculators</a></li>
+<li><a href="../index.html#cat-security">Security & Hash</a></li>
+<li><a href="../index.html#cat-encode">Encode / Decode</a></li>
+<li><a href="../index.html#cat-developer">Developer Tools</a></li>
+<li><a href="../index.html#cat-image">Image Tools</a></li>
+<li><a href="../index.html#cat-pdf">PDF Tools</a></li>
+<li><a href="../index.html#cat-seo">SEO Tools</a></li>
+<li><a href="../index.html#cat-misc">Misc Tools</a></li>
+<li><a href="../index.html#cat-amazon">Amazon Seller Tools</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h3>Popular Tools</h3>
+        <ul><li><a href="../tools/word-counter.html">Word Counter</a></li>
+<li><a href="../tools/password-generator.html">Password Generator</a></li>
+<li><a href="../tools/qr-code-generator.html">QR Code Generator</a></li>
+<li><a href="../tools/base64-encoder-decoder.html">Base64 Encoder/Decoder</a></li>
+<li><a href="../tools/percentage-calculator.html">Percentage Calculator</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Connect</h3>
+        <ul>
+          <li><a href="../blog/index.html">Blog</a></li>
+          <li><a href="mailto:digitalquiverinfo@gmail.com">Email Us</a></li>
+          <li><a href="https://www.facebook.com/digitalquiver/" target="_blank" rel="noopener">Facebook Page</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 DigitalQuiver Tools. All rights reserved.</span>
+      <span>Built by <a href="https://digitalquiver.com/" target="_blank" rel="noopener">DigitalQuiver Agency</a></span>
+    </div>
+  </div>
+</footer>
+<script defer src="../assets/js/main.js"></script>
+  
+<script defer src="../assets/js/tools/fba-dimensional-weight-calculator.js"></script>
+</body>
+</html>

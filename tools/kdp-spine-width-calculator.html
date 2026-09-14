@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem("dq-theme");
+    if (!t) { t = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"; }
+    if (t === "light") { document.documentElement.setAttribute("data-theme", "light"); }
+  } catch (e) {}
+})();
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6PK9VV63JE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-6PK9VV63JE');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KDP Spine Width Calculator - Amazon Paperback Cover Spine Size | DigitalQuiver Tools</title>
+<meta name="description" content="Calculate your Amazon KDP paperback spine width in inches and mm from page count and paper type (white, cream, standard or premium color).">
+<link rel="canonical" href="https://tools.digitalquiver.com/tools/kdp-spine-width-calculator.html">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="KDP Spine Width Calculator - Amazon Paperback Cover Spine Size | DigitalQuiver Tools">
+<meta property="og:description" content="Calculate your Amazon KDP paperback spine width in inches and mm from page count and paper type (white, cream, standard or premium color).">
+<meta property="og:url" content="https://tools.digitalquiver.com/tools/kdp-spine-width-calculator.html">
+<meta property="og:image" content="https://tools.digitalquiver.com/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tools.digitalquiver.com/assets/img/og-image.jpg">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "KDP Spine Width Calculator - DigitalQuiver Tools", "url": "https://tools.digitalquiver.com/tools/kdp-spine-width-calculator.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any (runs in browser)", "description": "Calculate your Amazon KDP paperback spine width in inches and mm from page count and paper type (white, cream, standard or premium color).", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="../index.html" class="brand"><svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0f1523"/><path d="M14 50 L38 26" stroke="#f5a524" stroke-width="5" stroke-linecap="round"/><path d="M38 26 H22" stroke="#f5a524" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M38 26 V42" stroke="#f5a524" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="46" cy="18" r="4.5" fill="#36d1c4"/></svg>DigitalQuiver <span class="brand-sub">Tools</span></a>
+    <nav class="header-nav">
+      <a href="../index.html">All Tools</a>
+      <a href="../index.html#cat-amazon">Amazon Tools</a>
+      <a href="../blog/index.html">Blog</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch between light and dark theme" title="Switch theme"><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+    </nav>
+  </div>
+</header>
+<main class="container tool-main">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#cat-amazon">Amazon Seller Tools</a><span class="sep">/</span><span class="current">KDP Spine Width Calculator</span>
+    </nav>
+  <div class="ad-slot">
+    <div class="ad-slot-inner"><script>
+(function () {
+  var isNarrow = window.innerWidth < 700;
+  var key = isNarrow ? "d8d6acbca52509f9d1a38150a06f159e" : "5cefb306c32d814f64e662478bd89dcb";
+  var w = isNarrow ? 320 : 728;
+  var h = isNarrow ? 50 : 90;
+  window.atOptions = { key: key, format: "iframe", height: h, width: w, params: {} };
+  document.write('<scr' + 'ipt src="https://www.highrevenueformat.com/' + key + '/invoke.js"><' + '/scr' + 'ipt>');
+})();
+</script></div>
+  </div>
+  <div class="tool-header">
+    <h1>KDP Spine Width Calculator</h1>
+    <p class="tool-tagline">Calculate paperback spine width from page count and paper type.</p>
+  </div>
+  <div class="tool-widget" id="kdp-spine-width-calculator" >
+    <div class="row">
+      <div class="field"><label for="sw-pages">Page count</label><input type="number" id="sw-pages" value="250" step="1"></div>
+      <div class="field">
+        <label for="sw-paper">Paper type</label>
+        <select id="sw-paper">
+          <option value="white" selected>White</option>
+          <option value="cream">Cream</option>
+          <option value="standard-color">Standard color</option>
+          <option value="premium-color">Premium color</option>
+        </select>
+      </div>
+    </div>
+    <div class="result-grid">
+      <div class="result-item"><span class="value" id="sw-inches">0"</span><span class="label">Spine Width (inches)</span></div>
+      <div class="result-item"><span class="value" id="sw-mm">0 mm</span><span class="label">Spine Width (mm)</span></div>
+    </div>
+  </div>
+  <div class="ad-slot">
+    <div class="ad-slot-inner"><script>
+atOptions = { key: "c6eb8755d17084a3a802e7cd45d22253", format: "iframe", height: 250, width: 300, params: {} };
+</script>
+<script src="https://www.highrevenueformat.com/c6eb8755d17084a3a802e7cd45d22253/invoke.js"></script></div>
+  </div>
+  <section class="tool-content">
+    <h2>What is the KDP Spine Width Calculator?</h2>
+    <p>Your paperback's cover file needs an exact spine width to line up the front cover, spine text and back cover correctly. Amazon KDP calculates spine width from your page count and interior paper type using a fixed per-page thickness.</p>
+    <h2>The formula</h2>
+    <p>Spine width (inches) = page count &times; paper thickness factor: white paper &asymp; 0.002252"/page, cream paper &asymp; 0.0025"/page, standard color &asymp; 0.0032"/page, premium color &asymp; 0.002252"/page.</p>
+    <h2>A note on accuracy</h2>
+    <p>These per-page constants come from Amazon KDP's published cover template guidance, cross-checked against multiple current publishing resources. The premium color constant in particular is cited slightly differently across sources, so before submitting your final cover file, always confirm the exact spine width using <a href="https://kdp.amazon.com/cover-calculator" target="_blank" rel="noopener">Amazon's own official KDP Cover Calculator</a> &mdash; it's the authoritative source and will catch any recent formula changes this tool might not yet reflect.</p>
+    <h2>How to use it</h2>
+    <ol>
+      <li>Enter your final interior page count (after formatting, not your manuscript word count).</li>
+      <li>Select the paper type you've chosen for your interior.</li>
+      <li>Use the resulting spine width to build your cover template, or as a sanity check against a template you've already downloaded from KDP.</li>
+    </ol>
+  </section>
+  <section class="related-tools">
+      <h2>More Amazon Seller Tools</h2>
+      <div class="tool-grid"><a class="tool-card" href="../tools/fba-profit-calculator.html" data-name="FBA Profit & ROI Calculator" data-desc="Work out your real profit, margin and ROI on any Amazon FBA product."><span class="icon"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" /> <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" /></svg></span><span class="name">FBA Profit & ROI Calculator</span><span class="desc">Work out your real profit, margin and ROI on any Amazon FBA product.</span></a>
+<a class="tool-card" href="../tools/fba-dimensional-weight-calculator.html" data-name="FBA Dimensional Weight Calculator" data-desc="Calculate dimensional weight from package dimensions using Amazon's divisor."><span class="icon"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" /> <path d="m3.3 7 8.7 5 8.7-5" /> <path d="M12 22V12" /></svg></span><span class="name">FBA Dimensional Weight Calculator</span><span class="desc">Calculate dimensional weight from package dimensions using Amazon's divisor.</span></a>
+<a class="tool-card" href="../tools/ppc-acos-roas-calculator.html" data-name="PPC ACOS/ROAS Calculator" data-desc="Calculate ACOS, ROAS and your break-even ad spend for Amazon PPC."><span class="icon"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <circle cx="12" cy="12" r="6" /> <circle cx="12" cy="12" r="2" /></svg></span><span class="name">PPC ACOS/ROAS Calculator</span><span class="desc">Calculate ACOS, ROAS and your break-even ad spend for Amazon PPC.</span></a>
+<a class="tool-card" href="../tools/profit-margin-calculator.html" data-name="Profit Margin Calculator" data-desc="Calculate profit, margin % and markup % from cost and selling price."><span class="icon"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" /> <path d="M12 18V6" /></svg></span><span class="name">Profit Margin Calculator</span><span class="desc">Calculate profit, margin % and markup % from cost and selling price.</span></a></div>
+    </section>
+  <div class="ad-slot">
+    <div class="ad-slot-inner"><script>
+(function () {
+  var isNarrow = window.innerWidth < 700;
+  var key = isNarrow ? "d8d6acbca52509f9d1a38150a06f159e" : "5cefb306c32d814f64e662478bd89dcb";
+  var w = isNarrow ? 320 : 728;
+  var h = isNarrow ? 50 : 90;
+  window.atOptions = { key: key, format: "iframe", height: h, width: w, params: {} };
+  document.write('<scr' + 'ipt src="https://www.highrevenueformat.com/' + key + '/invoke.js"><' + '/scr' + 'ipt>');
+})();
+</script></div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h3>DigitalQuiver Tools</h3>
+        <p style="margin:0;">Free, fast, browser-based utilities. No sign-up, no uploads &mdash; everything runs on your own device.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Categories</h3>
+        <ul><li><a href="../index.html#cat-text">Text Tools</a></li>
+<li><a href="../index.html#cat-generators">Generators</a></li>
+<li><a href="../index.html#cat-converters">Converters</a></li>
+<li><a href="../index.html#cat-calculators">Calculators</a></li>
+<li><a href="../index.html#cat-security">Security & Hash</a></li>
+<li><a href="../index.html#cat-encode">Encode / Decode</a></li>
+<li><a href="../index.html#cat-developer">Developer Tools</a></li>
+<li><a href="../index.html#cat-image">Image Tools</a></li>
+<li><a href="../index.html#cat-pdf">PDF Tools</a></li>
+<li><a href="../index.html#cat-seo">SEO Tools</a></li>
+<li><a href="../index.html#cat-misc">Misc Tools</a></li>
+<li><a href="../index.html#cat-amazon">Amazon Seller Tools</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h3>Popular Tools</h3>
+        <ul><li><a href="../tools/word-counter.html">Word Counter</a></li>
+<li><a href="../tools/password-generator.html">Password Generator</a></li>
+<li><a href="../tools/qr-code-generator.html">QR Code Generator</a></li>
+<li><a href="../tools/base64-encoder-decoder.html">Base64 Encoder/Decoder</a></li>
+<li><a href="../tools/percentage-calculator.html">Percentage Calculator</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Connect</h3>
+        <ul>
+          <li><a href="../blog/index.html">Blog</a></li>
+          <li><a href="mailto:digitalquiverinfo@gmail.com">Email Us</a></li>
+          <li><a href="https://www.facebook.com/digitalquiver/" target="_blank" rel="noopener">Facebook Page</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 DigitalQuiver Tools. All rights reserved.</span>
+      <span>Built by <a href="https://digitalquiver.com/" target="_blank" rel="noopener">DigitalQuiver Agency</a></span>
+    </div>
+  </div>
+</footer>
+<script defer src="../assets/js/main.js"></script>
+  
+<script defer src="../assets/js/tools/kdp-spine-width-calculator.js"></script>
+</body>
+</html>

@@ -60,6 +60,15 @@
   <url><loc>https://tools.digitalquiver.com/tools/robots-txt-generator.html</loc></url>
   <url><loc>https://tools.digitalquiver.com/tools/sitemap-generator.html</loc></url>
   <url><loc>https://tools.digitalquiver.com/tools/user-agent-parser.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/tools/fba-profit-calculator.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/tools/fba-dimensional-weight-calculator.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/tools/ppc-acos-roas-calculator.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/tools/profit-margin-calculator.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/tools/kdp-royalty-calculator.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/tools/kdp-spine-width-calculator.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/tools/amazon-title-bullet-character-counter.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/tools/asin-extractor.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/tools/upc-ean-check-digit-validator.html</loc></url>
   <url><loc>https://tools.digitalquiver.com/blog/index.html</loc></url>
   <url><loc>https://tools.digitalquiver.com/blog/why-word-counters-disagree.html</loc></url>
   <url><loc>https://tools.digitalquiver.com/blog/character-limits-explained.html</loc></url>
@@ -117,4 +126,13 @@
   <url><loc>https://tools.digitalquiver.com/blog/robots-txt-disallow-all-mistake.html</loc></url>
   <url><loc>https://tools.digitalquiver.com/blog/does-google-need-your-sitemap.html</loc></url>
   <url><loc>https://tools.digitalquiver.com/blog/what-your-browser-announces-about-you.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/blog/why-your-amazon-listing-looks-profitable-but-isnt.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/blog/amazon-dimensional-weight-explained.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/blog/acos-vs-roas-which-number-actually-matters.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/blog/margin-vs-markup-the-pricing-mistake.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/blog/kdp-70-percent-royalty-isnt-always-better.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/blog/why-your-book-cover-spine-must-be-exact.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/blog/amazon-title-75-character-limit-explained.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/blog/what-is-an-asin-and-why-it-isnt-a-upc.html</loc></url>
+  <url><loc>https://tools.digitalquiver.com/blog/how-barcode-check-digits-catch-typos.html</loc></url>
 </urlset>
