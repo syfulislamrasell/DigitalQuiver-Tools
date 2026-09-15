@@ -618,6 +618,54 @@ main.tool-main {
   margin-top: 5px;
 }
 
+.dropzone {
+  position: relative;
+  border: 2px dashed var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 28px 16px;
+  text-align: center;
+  background: var(--bg-elevated);
+  transition: border-color 0.15s, background 0.15s;
+}
+.dropzone input[type="file"] {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.dropzone-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  pointer-events: none;
+}
+.dropzone-icon {
+  width: 30px;
+  height: 30px;
+  stroke: var(--text-dim);
+}
+.dropzone-text {
+  font-size: 0.88rem;
+  color: var(--text-dim);
+}
+.dropzone-text strong {
+  color: var(--accent);
+}
+.dropzone-filename {
+  font-size: 0.82rem;
+  color: var(--text);
+  font-weight: 700;
+  min-height: 1.2em;
+}
+.dropzone:hover,
+.dropzone.dragover {
+  border-color: var(--accent);
+  background: var(--icon-bg);
+}
+
 textarea, input[type="text"], input[type="number"], input[type="password"],
 input[type="date"], input[type="url"], select {
   width: 100%;

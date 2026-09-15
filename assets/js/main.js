@@ -123,4 +123,35 @@
       applyFilter();
     }
   }
+
+  // ---- Drag-and-drop file inputs (Image & PDF tools) ----
+  document.querySelectorAll(".dropzone").forEach(function (zone) {
+    var input = zone.querySelector('input[type="file"]');
+    var filenameEl = zone.querySelector(".dropzone-filename");
+    if (!input) return;
+
+    ["dragenter", "dragover"].forEach(function (evt) {
+      input.addEventListener(evt, function (e) {
+        e.preventDefault();
+        zone.classList.add("dragover");
+      });
+    });
+    ["dragleave", "drop"].forEach(function (evt) {
+      input.addEventListener(evt, function () {
+        zone.classList.remove("dragover");
+      });
+    });
+
+    input.addEventListener("change", function () {
+      if (!filenameEl) return;
+      var files = input.files;
+      if (!files || !files.length) {
+        filenameEl.textContent = "";
+      } else if (files.length === 1) {
+        filenameEl.textContent = files[0].name;
+      } else {
+        filenameEl.textContent = files.length + " files selected";
+      }
+    });
+  });
 })();

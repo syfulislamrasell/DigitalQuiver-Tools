@@ -76,7 +76,14 @@
   <div class="tool-widget" id="pdf-protect" >
     <div class="field">
       <label for="pp-file">Choose a PDF file</label>
-      <input type="file" id="pp-file" accept="application/pdf">
+      <div class="dropzone">
+        <input type="file" id="pp-file" accept="application/pdf">
+        <div class="dropzone-visual">
+          <svg class="dropzone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /> <path d="M14 2v5a1 1 0 0 0 1 1h5" /> <path d="M12 12v6" /> <path d="m15 15-3-3-3 3" /></svg>
+          <p class="dropzone-text"><strong>Click to choose a file</strong> or drag and drop it here</p>
+          <p class="dropzone-filename"></p>
+        </div>
+      </div>
     </div>
     <div class="row">
       <div class="field"><label for="pp-userpw">Password to open the file</label><input type="text" id="pp-userpw" placeholder="Required"></div>
