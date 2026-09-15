@@ -19,21 +19,21 @@
   gtag('config', 'G-6PK9VV63JE');
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Image Compressor - Free Online Image Size Reducer | DigitalQuiver Tools</title>
-<meta name="description" content="Compress JPEG or WebP images to a smaller file size online for free. Your photo is never uploaded anywhere — compression happens in your browser.">
-<link rel="canonical" href="https://tools.digitalquiver.com/tools/image-compressor.html">
+<title>Add Border to Image - Free Online Image Framer | DigitalQuiver Tools</title>
+<meta name="description" content="Add a solid color border of any width and color around a photo, entirely in your browser. Free, instant, no upload required.">
+<link rel="canonical" href="https://tools.digitalquiver.com/tools/image-border.html">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Image Compressor - Free Online Image Size Reducer | DigitalQuiver Tools">
-<meta property="og:description" content="Compress JPEG or WebP images to a smaller file size online for free. Your photo is never uploaded anywhere — compression happens in your browser.">
-<meta property="og:url" content="https://tools.digitalquiver.com/tools/image-compressor.html">
+<meta property="og:title" content="Add Border to Image - Free Online Image Framer | DigitalQuiver Tools">
+<meta property="og:description" content="Add a solid color border of any width and color around a photo, entirely in your browser. Free, instant, no upload required.">
+<meta property="og:url" content="https://tools.digitalquiver.com/tools/image-border.html">
 <meta property="og:image" content="https://tools.digitalquiver.com/assets/img/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://tools.digitalquiver.com/assets/img/og-image.jpg">
 <link rel="stylesheet" href="../assets/css/style.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Image Compressor - DigitalQuiver Tools", "url": "https://tools.digitalquiver.com/tools/image-compressor.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any (runs in browser)", "description": "Compress JPEG or WebP images to a smaller file size online for free. Your photo is never uploaded anywhere \u2014 compression happens in your browser.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Add Border to Image - DigitalQuiver Tools", "url": "https://tools.digitalquiver.com/tools/image-border.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any (runs in browser)", "description": "Add a solid color border of any width and color around a photo, entirely in your browser. Free, instant, no upload required.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
 </head>
 <body>
 <header class="site-header">
@@ -55,7 +55,7 @@
 </header>
 <main class="container tool-main">
   <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="../index.html">Home</a><span class="sep">/</span><a href="../tools.html#cat-image">Image Tools</a><span class="sep">/</span><span class="current">Image Compressor</span>
+      <a href="../index.html">Home</a><span class="sep">/</span><a href="../tools.html#cat-image">Image Tools</a><span class="sep">/</span><span class="current">Add Border to Image</span>
     </nav>
   <div class="ad-slot">
     <div class="ad-slot-inner"><script>
@@ -70,14 +70,14 @@
 </script></div>
   </div>
   <div class="tool-header">
-    <h1>Image Compressor</h1>
-    <p class="tool-tagline">Shrink an image's file size right in your browser, before you download it.</p>
+    <h1>Add Border to Image</h1>
+    <p class="tool-tagline">Add a solid color border or frame around a photo and download it.</p>
   </div>
-  <div class="tool-widget" id="image-compressor" >
+  <div class="tool-widget" id="image-border" >
     <div class="field">
-      <label for="ic-file">Choose an image</label>
+      <label for="ibd-file">Choose an image</label>
       <div class="dropzone">
-        <input type="file" id="ic-file" accept="image/*">
+        <input type="file" id="ibd-file" accept="image/*">
         <div class="dropzone-visual">
           <svg class="dropzone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /> <path d="M14 2v5a1 1 0 0 0 1 1h5" /> <path d="M12 12v6" /> <path d="m15 15-3-3-3 3" /></svg>
           <p class="dropzone-text"><strong>Click to choose a file</strong> or drag and drop it here</p>
@@ -87,29 +87,20 @@
     </div>
     <div class="row">
       <div class="field">
-        <label for="ic-format">Output format</label>
-        <select id="ic-format">
-          <option value="image/jpeg" selected>JPEG</option>
-          <option value="image/webp">WebP</option>
-        </select>
+        <label for="ibd-width">Border width: <span id="ibd-width-val">20</span>px</label>
+        <input type="range" id="ibd-width" min="1" max="150" value="20">
       </div>
       <div class="field">
-        <label for="ic-quality">Quality: <span id="ic-quality-val">80</span>%</label>
-        <input type="range" id="ic-quality" min="10" max="100" value="80">
+        <label for="ibd-color">Border color</label>
+        <input type="color" id="ibd-color" value="#ffffff">
       </div>
     </div>
     <div class="btn-row">
-      <button type="button" class="btn btn-primary" id="ic-compress" disabled>Compress Image</button>
-      <button type="button" class="btn btn-secondary" id="ic-download" disabled>Download</button>
+      <button type="button" class="btn btn-primary" id="ibd-download" disabled>Download PNG</button>
     </div>
-    <p class="error-msg" id="ic-error"></p>
-    <div class="result-grid">
-      <div class="result-item"><span class="value" id="ic-original-size">&mdash;</span><span class="label">Original Size</span></div>
-      <div class="result-item"><span class="value" id="ic-new-size">&mdash;</span><span class="label">New Size</span></div>
-      <div class="result-item"><span class="value" id="ic-savings">&mdash;</span><span class="label">Reduction</span></div>
-    </div>
+    <p class="error-msg" id="ibd-error"></p>
     <div style="text-align:center; margin-top:16px;">
-      <canvas id="ic-canvas" style="max-width:100%; border-radius:10px;"></canvas>
+      <canvas id="ibd-canvas" style="max-width:100%; border-radius:10px;"></canvas>
     </div>
   </div>
   <div class="ad-slot">
@@ -119,22 +110,22 @@ atOptions = { key: "c6eb8755d17084a3a802e7cd45d22253", format: "iframe", height:
 <script src="https://www.highrevenueformat.com/c6eb8755d17084a3a802e7cd45d22253/invoke.js"></script></div>
   </div>
   <section class="tool-content">
-    <h2>What is the Image Compressor?</h2>
-    <p>This tool reduces an image's file size by re-encoding it as JPEG or WebP at a quality level you choose, using your browser's built-in image encoder &mdash; the same technology behind the "Save As" quality slider in most photo editors, just without installing anything.</p>
+    <h2>What is the Add Border tool?</h2>
+    <p>This tool adds a solid-color border of any width around a photo, useful for framing an image before sharing it, adding breathing room around a screenshot, or giving product photos a clean, consistent edge.</p>
     <h2>How to use it</h2>
     <ol>
       <li>Choose an image from your device.</li>
-      <li>Pick an output format and drag the quality slider &mdash; lower quality means a smaller file.</li>
-      <li>Click <strong>Compress Image</strong> to see the before/after file size, then <strong>Download</strong> the result.</li>
+      <li>Adjust the border width and pick a color; the preview updates instantly.</li>
+      <li>Click <strong>Download PNG</strong> to save the framed image.</li>
     </ol>
-    <p>Smaller images mean faster-loading web pages, quicker uploads, and less storage used, and JPEG or WebP at 70-85% quality is usually visually indistinguishable from the original while cutting file size significantly. WebP typically compresses noticeably smaller than JPEG at the same visual quality, so it's worth comparing both if browser support isn't a concern for your use case. Because everything happens locally on your device using the Canvas API, your photo is never uploaded to any server &mdash; which matters if you're compressing anything personal or sensitive.</p>
+    <p>The border is drawn as a solid frame around the full original image, keeping every pixel of the source photo intact rather than cropping into it. As with the other image tools here, everything happens on your device using the Canvas API, so the image is never uploaded anywhere.</p>
   </section>
   <section class="related-tools">
       <h2>More Image Tools</h2>
-      <div class="tool-grid"><a class="tool-card" href="../tools/image-resizer.html" data-name="Image Resizer" data-desc="Resize an image to exact dimensions, with optional locked aspect ratio."><span class="icon"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" /> <path d="M14 15H9v-5" /> <path d="M16 3h5v5" /> <path d="M21 3 9 15" /></svg></span><span class="name">Image Resizer</span><span class="desc">Resize an image to exact dimensions, with optional locked aspect ratio.</span></a>
+      <div class="tool-grid"><a class="tool-card" href="../tools/image-compressor.html" data-name="Image Compressor" data-desc="Shrink an image's file size right in your browser, before you download it."><span class="icon"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10l-3.1-3.1a2 2 0 0 0-2.814.014L6 21" /> <path d="m14 19 3 3v-5.5" /> <path d="m17 22 3-3" /> <circle cx="9" cy="9" r="2" /></svg></span><span class="name">Image Compressor</span><span class="desc">Shrink an image's file size right in your browser, before you download it.</span></a>
+<a class="tool-card" href="../tools/image-resizer.html" data-name="Image Resizer" data-desc="Resize an image to exact dimensions, with optional locked aspect ratio."><span class="icon"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" /> <path d="M14 15H9v-5" /> <path d="M16 3h5v5" /> <path d="M21 3 9 15" /></svg></span><span class="name">Image Resizer</span><span class="desc">Resize an image to exact dimensions, with optional locked aspect ratio.</span></a>
 <a class="tool-card" href="../tools/image-converter.html" data-name="Image Format Converter" data-desc="Convert an image between PNG, JPEG and WebP formats."><span class="icon"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2" /> <circle cx="9" cy="9" r="2" /> <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /></svg></span><span class="name">Image Format Converter</span><span class="desc">Convert an image between PNG, JPEG and WebP formats.</span></a>
-<a class="tool-card" href="../tools/image-rotator.html" data-name="Image Rotator" data-desc="Rotate or flip an image in your browser and download the result."><span class="icon"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8" /> <path d="M21 3v5h-5" /></svg></span><span class="name">Image Rotator</span><span class="desc">Rotate or flip an image in your browser and download the result.</span></a>
-<a class="tool-card" href="../tools/image-border.html" data-name="Add Border to Image" data-desc="Add a solid color border or frame around a photo and download it."><span class="icon"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" x2="2" y1="6" y2="6" /> <line x1="22" x2="2" y1="18" y2="18" /> <line x1="6" x2="6" y1="2" y2="22" /> <line x1="18" x2="18" y1="2" y2="22" /></svg></span><span class="name">Add Border to Image</span><span class="desc">Add a solid color border or frame around a photo and download it.</span></a></div>
+<a class="tool-card" href="../tools/image-rotator.html" data-name="Image Rotator" data-desc="Rotate or flip an image in your browser and download the result."><span class="icon"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8" /> <path d="M21 3v5h-5" /></svg></span><span class="name">Image Rotator</span><span class="desc">Rotate or flip an image in your browser and download the result.</span></a></div>
     </section>
   <div class="ad-slot">
     <div class="ad-slot-inner"><script>
@@ -208,6 +199,6 @@ atOptions = { key: "c6eb8755d17084a3a802e7cd45d22253", format: "iframe", height:
 </footer>
 <script defer src="../assets/js/main.js"></script>
   
-<script defer src="../assets/js/tools/image-compressor.js"></script>
+<script defer src="../assets/js/tools/image-border.js"></script>
 </body>
 </html>
