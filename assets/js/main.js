@@ -130,19 +130,7 @@
     var filenameEl = zone.querySelector(".dropzone-filename");
     if (!input) return;
 
-    ["dragenter", "dragover"].forEach(function (evt) {
-      input.addEventListener(evt, function (e) {
-        e.preventDefault();
-        zone.classList.add("dragover");
-      });
-    });
-    ["dragleave", "drop"].forEach(function (evt) {
-      input.addEventListener(evt, function () {
-        zone.classList.remove("dragover");
-      });
-    });
-
-    input.addEventListener("change", function () {
+    var showFilenames = function () {
       if (!filenameEl) return;
       var files = input.files;
       if (!files || !files.length) {
@@ -152,6 +140,39 @@
       } else {
         filenameEl.textContent = files.length + " files selected";
       }
+    };
+
+    ["dragenter", "dragover"].forEach(function (evt) {
+      zone.addEventListener(evt, function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        zone.classList.add("dragover");
+      });
+    });
+    ["dragleave", "dragend"].forEach(function (evt) {
+      zone.addEventListener(evt, function (e) {
+        e.preventDefault();
+        zone.classList.remove("dragover");
+      });
+    });
+    zone.addEventListener("drop", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      zone.classList.remove("dragover");
+      var dropped = e.dataTransfer && e.dataTransfer.files;
+      if (dropped && dropped.length) {
+        input.files = dropped;
+        input.dispatchEvent(new Event("change", { bubbles: true }));
+      }
+    });
+
+    input.addEventListener("change", showFilenames);
+  });
+
+  // Stop the browser from opening a dragged-in file if it misses a dropzone
+  ["dragover", "drop"].forEach(function (evt) {
+    window.addEventListener(evt, function (e) {
+      if (!e.target.closest(".dropzone")) e.preventDefault();
     });
   });
 })();
