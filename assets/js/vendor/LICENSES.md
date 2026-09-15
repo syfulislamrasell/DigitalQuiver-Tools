@@ -10,5 +10,7 @@
 - **pdf-lib.min.js** — [@cantoo/pdf-lib](https://github.com/cantoo-scribe/pdf-lib) (a maintained fork of [pdf-lib](https://github.com/Hopding/pdf-lib) that adds password/encryption support used by the Protect PDF tool). MIT License.
 - **bowser.min.js** — [bowser](https://github.com/lancedikson/bowser). MIT License.
 - **pdf.min.js / pdf.worker.min.js** — [PDF.js](https://github.com/mozilla/pdf.js) by Mozilla. Apache License 2.0.
+- **mediapipe-vision-bundle.js / mediapipe-wasm/** — [MediaPipe Tasks Vision](https://github.com/google-ai-edge/mediapipe) by Google. Apache License 2.0.
+- **mediapipe-selfie-segmenter.tflite** — Google's official "Selfie Segmenter" model from the [MediaPipe model zoo](https://ai.google.dev/edge/mediapipe/solutions/vision/image_segmenter), used to power the Remove Background tool. Apache License 2.0.
 
-All are pure client-side JavaScript with no external dependencies, vendored locally so the site keeps working with no backend and no third-party script requests.
+All are pure client-side JavaScript (or WASM/model files loaded entirely client-side) with no external dependencies, vendored locally so the site keeps working with no backend and no third-party script requests.
